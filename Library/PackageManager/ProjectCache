@@ -5,7 +5,7 @@ m_ProjectFiles:
     m_ContentTrackingEnabled: 1
     m_ModificationDate:
       serializedVersion: 2
-      ticks: 639032214102405482
+      ticks: 639033116125872196
     m_Hash: 3533002498
   m_LockFileStatus:
     m_FilePath: C:/Users/Julia/Unity/Camping-Game/Packages/packages-lock.json
@@ -13,7 +13,7 @@ m_ProjectFiles:
     m_ContentTrackingEnabled: 1
     m_ModificationDate:
       serializedVersion: 2
-      ticks: 639032214102410527
+      ticks: 639033116125882209
     m_Hash: 4046042492
 m_EmbeddedPackageManifests:
   m_ManifestsStatus: {}
@@ -1211,7 +1211,7 @@ m_ResolvedPackages:
   unityLifecycle:
     version: 2.2.6
     nextVersion: 
-    recommendedVersion: 
+    recommendedVersion: 2.2.0
     isDeprecated: 0
     deprecationMessage: 
   isDeprecated: 0
@@ -1479,7 +1479,7 @@ m_ResolvedPackages:
     - 2.5.1
     - 2.6.0
     - 2.7.0
-    recommended: 1.14.1
+    recommended: 2.7.0
     deprecated: []
   dependencies:
   - name: com.unity.transport
@@ -1534,7 +1534,7 @@ m_ResolvedPackages:
   unityLifecycle:
     version: 1.14.1
     nextVersion: 
-    recommendedVersion: 
+    recommendedVersion: 2.7.0
     isDeprecated: 0
     deprecationMessage: 
   isDeprecated: 0
@@ -1983,7 +1983,7 @@ m_ResolvedPackages:
     - 16.7.0
     - 16.8.0
     - 16.9.0
-    recommended: 16.7.0
+    recommended: 16.9.0
     deprecated:
     - 15.1.150000-pre.6
     - 15.1.150002-pre.1
@@ -2050,7 +2050,7 @@ m_ResolvedPackages:
   unityLifecycle:
     version: 16.7.0
     nextVersion: 
-    recommendedVersion: 
+    recommendedVersion: 16.9.0
     isDeprecated: 0
     deprecationMessage: 
   isDeprecated: 0
@@ -5693,6 +5693,7 @@ m_ResolvedPackages:
     - 2.6.0-pre.4
     - 2.6.2
     - 2.6.3
+    - 2.6.4
     compatible:
     - 2.5.1
     - 2.5.2
@@ -5703,6 +5704,7 @@ m_ResolvedPackages:
     - 2.6.0-pre.4
     - 2.6.2
     - 2.6.3
+    - 2.6.4
     recommended: 2.5.7
     deprecated: []
   dependencies:
@@ -5800,7 +5802,7 @@ m_ResolvedPackages:
     email: 
     url: 
   category: 
-  type: 
+  type: assets
   description: Provides connectivity Quality of Service (QoS) measurements from Unity
     game clients to different Unity game services running in various geographic regions.
   errors: []
@@ -5822,17 +5824,35 @@ m_ResolvedPackages:
     recommended: 1.3.2
     deprecated: []
   dependencies:
-  - name: com.unity.services.core
-    version: 1.12.4
-  - name: com.unity.modules.unitywebrequest
-    version: 1.0.0
-  - name: com.unity.nuget.newtonsoft-json
-    version: 3.0.2
-  - name: com.unity.services.authentication
-    version: 2.0.0
   - name: com.unity.collections
     version: 1.2.4
+  - name: com.unity.services.core
+    version: 1.12.4
+  - name: com.unity.nuget.newtonsoft-json
+    version: 3.0.2
+  - name: com.unity.modules.unitywebrequest
+    version: 1.0.0
+  - name: com.unity.services.authentication
+    version: 2.0.0
   resolvedDependencies:
+  - name: com.unity.collections
+    version: 2.5.1
+  - name: com.unity.burst
+    version: 1.8.25
+  - name: com.unity.mathematics
+    version: 1.3.2
+  - name: com.unity.modules.jsonserialize
+    version: 1.0.0
+  - name: com.unity.test-framework
+    version: 1.6.0
+  - name: com.unity.ext.nunit
+    version: 2.0.5
+  - name: com.unity.modules.imgui
+    version: 1.0.0
+  - name: com.unity.nuget.mono-cecil
+    version: 1.11.4
+  - name: com.unity.test-framework.performance
+    version: 3.2.0
   - name: com.unity.services.core
     version: 1.15.1
   - name: com.unity.modules.androidjni
@@ -5847,24 +5867,6 @@ m_ResolvedPackages:
     version: 2.0.0
   - name: com.unity.modules.ui
     version: 1.0.0
-  - name: com.unity.modules.imgui
-    version: 1.0.0
-  - name: com.unity.collections
-    version: 2.5.1
-  - name: com.unity.burst
-    version: 1.8.25
-  - name: com.unity.mathematics
-    version: 1.3.2
-  - name: com.unity.modules.jsonserialize
-    version: 1.0.0
-  - name: com.unity.test-framework
-    version: 1.6.0
-  - name: com.unity.ext.nunit
-    version: 2.0.5
-  - name: com.unity.nuget.mono-cecil
-    version: 1.11.4
-  - name: com.unity.test-framework.performance
-    version: 3.2.0
   keywords: []
   registry:
     id: main
@@ -5879,7 +5881,7 @@ m_ResolvedPackages:
       violations: []
   hideInEditor: 1
   entitlements:
-    licensingModel: 0
+    licensingModel: 1
   isAssetStorePackage: 0
   datePublishedTicks: 638465522380000000
   documentationUrl: https://docs.unity3d.com/Packages/com.unity.services.qos@1.3/manual/index.html
@@ -5977,7 +5979,7 @@ m_ResolvedPackages:
     - 1.15.1
     - 1.15.2
     - 1.16.0
-    recommended: 1.14.0
+    recommended: 1.16.0
     deprecated: []
   dependencies:
   - name: com.unity.modules.androidjni
@@ -6020,7 +6022,7 @@ m_ResolvedPackages:
   unityLifecycle:
     version: 1.14.0
     nextVersion: 
-    recommendedVersion: 
+    recommendedVersion: 1.16.0
     isDeprecated: 0
     deprecationMessage: 
   isDeprecated: 0
@@ -6127,7 +6129,7 @@ m_ResolvedPackages:
       violations: []
   hideInEditor: 1
   entitlements:
-    licensingModel: 0
+    licensingModel: 1
   isAssetStorePackage: 0
   datePublishedTicks: 638852460331360000
   documentationUrl: https://docs.unity3d.com/Packages/com.unity.services.wire@1.4/manual/index.html
@@ -6148,12 +6150,11 @@ m_ResolvedPackages:
   git:
     hash: 
     revision: 
-  upmReserved: '{"supportedPlatforms":["Android","iOS","Linux","Mac","PC","PS4","PS5","Switch","WebGL"],"changelog":"###
-    Fixed\n\n- Fixed WebSocketInvalidStateException raised when disconnecting, closing
-    an already opened socket\n- Fixed Wire occasionally using attempting to parse
-    addresses as IPV6 on latfomrsm that do not support IPV6\n- Fixed error getting
-    thrown when application returns from sleep due to unhandled server ping request.
-    (Not applicable to WebGL.)"}'
+  upmReserved: '{"changelog":"### Fixed\n\n- Fixed WebSocketInvalidStateException
+    raised when disconnecting, closing an already opened socket\n- Fixed Wire occasionally
+    using attempting to parse addresses as IPV6 on latfomrsm that do not support
+    IPV6\n- Fixed error getting thrown when application returns from sleep due to
+    unhandled server ping request. (Not applicable to WebGL.)"}'
   assetStore:
     productId: 
   fingerprint: 2d36cce58c62ac886c8bb03e9e262a35dcdc4752
@@ -6214,7 +6215,7 @@ m_ResolvedPackages:
     - 1.5.0
     - 1.6.2
     - 1.7.0
-    recommended: 1.3.0
+    recommended: 1.7.0
     deprecated: []
   dependencies:
   - name: com.unity.services.core
@@ -6259,7 +6260,7 @@ m_ResolvedPackages:
   unityLifecycle:
     version: 1.3.0
     nextVersion: 
-    recommendedVersion: 
+    recommendedVersion: 1.7.0
     isDeprecated: 0
     deprecationMessage: 
   isDeprecated: 0
@@ -6337,7 +6338,7 @@ m_ResolvedPackages:
     - 3.4.1
     - 3.5.1
     - 3.5.2
-    recommended: 3.4.1
+    recommended: 3.5.2
     deprecated: []
   dependencies:
   - name: com.unity.ugui
@@ -6390,7 +6391,7 @@ m_ResolvedPackages:
   unityLifecycle:
     version: 3.4.1
     nextVersion: 
-    recommendedVersion: 
+    recommendedVersion: 3.5.1
     isDeprecated: 0
     deprecationMessage: 
   isDeprecated: 0
@@ -6843,7 +6844,7 @@ m_ResolvedPackages:
     compatible:
     - 2.5.3
     - 2.6.0
-    recommended: 2.5.3
+    recommended: 2.6.0
     deprecated: []
   dependencies:
   - name: com.unity.burst
@@ -6898,7 +6899,7 @@ m_ResolvedPackages:
   unityLifecycle:
     version: 2.5.3
     nextVersion: 
-    recommendedVersion: 
+    recommendedVersion: 2.6.0
     isDeprecated: 0
     deprecationMessage: 
   isDeprecated: 0
@@ -7500,7 +7501,7 @@ m_ResolvedPackages:
     - 1.0.0
     - 1.1.2
     - 1.1.3
-    recommended: 1.0.0
+    recommended: 1.1.3
     deprecated: []
   dependencies: []
   resolvedDependencies: []
@@ -7531,7 +7532,7 @@ m_ResolvedPackages:
   unityLifecycle:
     version: 1.0.0
     nextVersion: 
-    recommendedVersion: 
+    recommendedVersion: 1.1.2
     isDeprecated: 0
     deprecationMessage: 
   isDeprecated: 0
