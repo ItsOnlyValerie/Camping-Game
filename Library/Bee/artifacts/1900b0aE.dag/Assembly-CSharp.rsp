@@ -484,8 +484,10 @@
 -analyzer:"C:/Program Files/Unity/Hub/Editor/6000.0.59f2/Editor/Data/Tools/Unity.SourceGenerators/Unity.Properties.SourceGenerator.dll"
 -analyzer:"C:/Program Files/Unity/Hub/Editor/6000.0.59f2/Editor/Data/Tools/Unity.SourceGenerators/Unity.SourceGenerators.dll"
 -analyzer:"C:/Program Files/Unity/Hub/Editor/6000.0.59f2/Editor/Data/Tools/Unity.SourceGenerators/Unity.UIToolkit.SourceGenerator.dll"
-"Assets/HelloWorldManager.cs"
-"Assets/PlayerController.cs"
+"Assets/My Robot Kyle/KylePlayerManager.cs"
+"Assets/Player Character/Scripts/PlayerController.cs"
+"Assets/Scripts/HelloWorldManager.cs"
+"Assets/Scripts/UIManager.cs"
 "Assets/TutorialInfo/Scripts/Readme.cs"
 -langversion:9.0
 /deterministic
