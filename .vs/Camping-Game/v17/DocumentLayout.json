@@ -7,7 +7,7 @@
       "RelativeMoniker": "D:0:0:{BB1E72F0-5D2C-DB75-5D69-CE88F371C622}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\uimanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{BB1E72F0-5D2C-DB75-5D69-CE88F371C622}|Assembly-CSharp.csproj|c:\\users\\julia\\unity\\camping-game\\assets\\player character\\scripts\\playercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{BB1E72F0-5D2C-DB75-5D69-CE88F371C622}|Assembly-CSharp.csproj|C:\\Users\\Julia\\Unity\\Camping-Game\\assets\\player character\\scripts\\playercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{BB1E72F0-5D2C-DB75-5D69-CE88F371C622}|Assembly-CSharp.csproj|solutionrelative:assets\\player character\\scripts\\playercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
@@ -28,7 +28,7 @@
               "RelativeDocumentMoniker": "Assets\\Scripts\\UIManager.cs",
               "ToolTip": "C:\\Users\\Julia\\Unity\\Camping-Game\\Assets\\Scripts\\UIManager.cs",
               "RelativeToolTip": "Assets\\Scripts\\UIManager.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAAFAAAAAAAAAA==",
+              "ViewState": "AgIAABMAAAAAAAAAAAA1wB8AAAAyAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-01-07T17:58:14.725Z",
               "EditorCaption": ""
@@ -41,7 +41,7 @@
               "RelativeDocumentMoniker": "Assets\\Player Character\\Scripts\\PlayerController.cs",
               "ToolTip": "C:\\Users\\Julia\\Unity\\Camping-Game\\Assets\\Player Character\\Scripts\\PlayerController.cs",
               "RelativeToolTip": "Assets\\Player Character\\Scripts\\PlayerController.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAE0AAAAAAAAAAAAwwHQAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-01-07T17:58:12.054Z",
               "EditorCaption": ""

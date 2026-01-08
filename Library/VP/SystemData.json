@@ -17,17 +17,14 @@
     "2": {
       "Name": "Player 2",
       "Tags": [],
-      "Active": true,
+      "Active": false,
       "Index": 2,
       "Type": 1,
       "PlayerIdentifier": {
         "Guid": "585e9cf6-53da-4b87-8225-26f2476e6daf"
       },
       "TypeDependentPlayerInfo": {
-        "VirtualProjectIdentifier": {
-          "m_Id": "f60e9ee7",
-          "m_Prefix": "mppm"
-        }
+        "VirtualProjectIdentifier": null
       },
       "MultiplayerRole": 3
     },

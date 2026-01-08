@@ -297,12 +297,17 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 28565793}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 28262df774accb44c8aedab57dce0fe8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   playerController: {fileID: 318896539751930413, guid: ea5dbea6cee538d468b458a59c1b30b3, type: 3}
+  createSession: {fileID: 1440552807}
+  joinSession: {fileID: 813407613}
+  leaveSession: {fileID: 1292032539}
+  sessionCode: {fileID: 596162446}
+  playerName: {fileID: 55036113}
 --- !u!4 &28565795
 Transform:
   m_ObjectHideFlags: 0

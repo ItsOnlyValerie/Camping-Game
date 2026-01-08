@@ -5,7 +5,7 @@ m_ProjectFiles:
     m_ContentTrackingEnabled: 1
     m_ModificationDate:
       serializedVersion: 2
-      ticks: 639033942707076221
+      ticks: 639034794754855135
     m_Hash: 3533002498
   m_LockFileStatus:
     m_FilePath: C:/Users/Julia/Unity/Camping-Game/Packages/packages-lock.json
@@ -13,7 +13,7 @@ m_ProjectFiles:
     m_ContentTrackingEnabled: 1
     m_ModificationDate:
       serializedVersion: 2
-      ticks: 639033942707086227
+      ticks: 639034794754855135
     m_Hash: 4046042492
 m_EmbeddedPackageManifests:
   m_ManifestsStatus: {}

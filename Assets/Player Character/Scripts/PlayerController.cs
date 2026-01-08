@@ -3,14 +3,18 @@ using System.Collections.Generic;
 using Unity.Collections;
 using UnityEngine;
 using Unity.Netcode;
+using Unity.Multiplayer.Center.NetcodeForGameObjectsExample.DistributedAuthority;
 
 public class PlayerController : NetworkBehaviour
 {
 
-    // reference the player animator
+    // Reference the player animator
     Animator animator;
 
-    // speed variables (and tilt)
+    // Reference the UI Manager
+    public UIManager uiManager;
+
+    // Speed variables (and tilt)
     public float turnSpeed = 360;
     public float tiltSpeed = 180;
     public float walkSpeed = 5;
@@ -21,11 +25,11 @@ public class PlayerController : NetworkBehaviour
     [SerializeField] private Camera fpcam; // first person camera
     [SerializeField] private Camera maincam; // main camera
 
-    // min & max tilt to stop the camera from rotating infinitely
+    // Min & max tilt to stop the camera from rotating infinitely
     public float minTilt = -45f;
     public float maxTilt = 45f;
 
-    //network variable for the animator's speed parameter
+    // Network variable for the animator's speed parameter
     public NetworkVariable<float> netAnimSpeed = new NetworkVariable<float>();
 
     // Start is called before the first frame update
@@ -34,7 +38,7 @@ public class PlayerController : NetworkBehaviour
         Cursor.lockState = CursorLockMode.Confined;
         //Cursor.visible = false;
 
-        animator = GetComponent<Animator>();
+        animator = GetComponent<Animator>(); // Get the player animator
     }
 
      // Update is called once per frame
@@ -87,7 +91,12 @@ public class PlayerController : NetworkBehaviour
     {
         isAlive = true;
         fpcam = GetComponentInChildren<Camera>();
-        if (IsOwner && fpcam != null)
+
+        // if the player is in a session, disable the create & join interface and enable the leave & code interface
+        uiManager = FindFirstObjectByType<UIManager>(); // find the UI Manager object
+        uiManager.SessionJoinUpdateUI();
+
+        if (IsOwner && fpcam != null) // if the client is the owner of the player character & the first person camera exists, disable the main camera, enable the player camera, and hide the character from the player
         {
             maincam = Camera.main;
             maincam.enabled = false;
@@ -95,7 +104,7 @@ public class PlayerController : NetworkBehaviour
             SkinnedMeshRenderer[] renderers = gameObject.GetComponentsInChildren<SkinnedMeshRenderer>();
             foreach (SkinnedMeshRenderer renderer in renderers) renderer.enabled = false;
         }
-        else
+        else // disable the first person camera if the client is not the owner of the player character so players do not overlap cameras
         {
             fpcam.enabled = false;
         }
@@ -109,6 +118,10 @@ public class PlayerController : NetworkBehaviour
     public override void OnNetworkDespawn()
     {
         isAlive = false;
+
+        // if the player is not in a session, enable the create & join interface and disable the leave & code interface
+        uiManager.SessionLeaveUpdateUI();
+
         if (IsOwner && fpcam != null && maincam != null)
         {
             fpcam.enabled = false;
