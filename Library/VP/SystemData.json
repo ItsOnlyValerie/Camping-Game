@@ -24,7 +24,10 @@
         "Guid": "585e9cf6-53da-4b87-8225-26f2476e6daf"
       },
       "TypeDependentPlayerInfo": {
-        "VirtualProjectIdentifier": null
+        "VirtualProjectIdentifier": {
+          "m_Id": "e4074c85",
+          "m_Prefix": "mppm"
+        }
       },
       "MultiplayerRole": 3
     },

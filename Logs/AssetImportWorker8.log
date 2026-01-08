@@ -1,0 +1,1394 @@
+Using pre-set license
+Built from '6000.0/respin/6000.0.59f1-063c55f2fd0f' branch; Version is '6000.0.59f2 (ef281c76c3c1) revision 15673372'; Using compiler version '193933523'; Build Type 'Release'
+OS: 'Windows 11  (10.0.26200) 64bit Core' Language: 'en' Physical Memory: 32678 MB
+BatchMode: 1, IsHumanControllingUs: 0, StartBugReporterOnCrash: 0, Is64bit: 1
+Date: 2026-01-08T15:44:21Z
+
+COMMAND LINE ARGUMENTS:
+C:\Program Files\Unity\Hub\Editor\6000.0.59f2\Editor\Unity.exe
+-adb2
+-batchMode
+-noUpm
+-name
+AssetImportWorker8
+-projectPath
+C:/Users/Julia/Unity/Camping-Game
+-logFile
+Logs/AssetImportWorker8.log
+-srvPort
+64858
+-job-worker-count
+11
+-background-job-worker-count
+8
+-gc-helper-count
+1
+-name
+AssetImport
+Successfully changed project path to: C:/Users/Julia/Unity/Camping-Game
+C:/Users/Julia/Unity/Camping-Game
+[UnityMemory] Configuration Parameters - Can be set up in boot.config
+    "memorysetup-bucket-allocator-granularity=16"
+    "memorysetup-bucket-allocator-bucket-count=8"
+    "memorysetup-bucket-allocator-block-size=33554432"
+    "memorysetup-bucket-allocator-block-count=8"
+    "memorysetup-main-allocator-block-size=16777216"
+    "memorysetup-thread-allocator-block-size=16777216"
+    "memorysetup-gfx-main-allocator-block-size=16777216"
+    "memorysetup-gfx-thread-allocator-block-size=16777216"
+    "memorysetup-cache-allocator-block-size=4194304"
+    "memorysetup-typetree-allocator-block-size=2097152"
+    "memorysetup-profiler-bucket-allocator-granularity=16"
+    "memorysetup-profiler-bucket-allocator-bucket-count=8"
+    "memorysetup-profiler-bucket-allocator-block-size=33554432"
+    "memorysetup-profiler-bucket-allocator-block-count=8"
+    "memorysetup-profiler-allocator-block-size=16777216"
+    "memorysetup-profiler-editor-allocator-block-size=1048576"
+    "memorysetup-temp-allocator-size-main=16777216"
+    "memorysetup-job-temp-allocator-block-size=2097152"
+    "memorysetup-job-temp-allocator-block-size-background=1048576"
+    "memorysetup-job-temp-allocator-reduction-small-platforms=262144"
+    "memorysetup-allocator-temp-initial-block-size-main=262144"
+    "memorysetup-allocator-temp-initial-block-size-worker=262144"
+    "memorysetup-temp-allocator-size-background-worker=32768"
+    "memorysetup-temp-allocator-size-job-worker=262144"
+    "memorysetup-temp-allocator-size-preload-manager=33554432"
+    "memorysetup-temp-allocator-size-nav-mesh-worker=65536"
+    "memorysetup-temp-allocator-size-audio-worker=65536"
+    "memorysetup-temp-allocator-size-cloud-worker=32768"
+    "memorysetup-temp-allocator-size-gi-baking-worker=262144"
+    "memorysetup-temp-allocator-size-gi-baking-worker=262144"
+    "memorysetup-temp-allocator-size-gi-baking-worker=262144"
+    "memorysetup-temp-allocator-size-gi-baking-worker=262144"
+    "memorysetup-temp-allocator-size-gi-baking-worker=262144"
+    "memorysetup-temp-allocator-size-gfx=262144"
+Player connection [31524]  Target information:
+
+Player connection [31524]  * "[IP] 192.168.0.22 [Port] 0 [Flags] 2 [Guid] 1810780122 [EditorId] 1810780122 [Version] 1048832 [Id] WindowsEditor(7,DESKTOP-2CG8G8V) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" 
+
+Player connection [31524] Host joined multi-casting on [225.0.0.222:54997]...
+Player connection [31524] Host joined alternative multi-casting on [225.0.0.222:34997]...
+JobSystem: Creating JobQueue using job-worker-count value 11
+Input System module state changed to: Initialized.
+[Physics::Module] Initialized fallback backend.
+[Physics::Module] Id: 0xdecafbad
+Library Redirect Path: Library/
+[Physics::Module] Selected backend.
+[Physics::Module] Name: PhysX
+[Physics::Module] Id: 0xf2b8ea05
+[Physics::Module] SDK Version: 4.1.2
+[Physics::Module] Integration Version: 1.0.0
+[Physics::Module] Threading Mode: Multi-Threaded
+Refreshing native plugins compatible for Editor in 8.88 ms, found 5 plugins.
+Preloading 1 native plugins for Editor in 1.75 ms.
+Initialize engine version: 6000.0.59f2 (ef281c76c3c1)
+[Subsystems] Discovering subsystems at path C:/Program Files/Unity/Hub/Editor/6000.0.59f2/Editor/Data/Resources/UnitySubsystems
+[Subsystems] Discovering subsystems at path C:/Users/Julia/Unity/Camping-Game/Assets
+GfxDevice: creating device client; kGfxThreadingModeNonThreaded
+Direct3D:
+    Version:  Direct3D 11.0 [level 11.1]
+    Renderer: NVIDIA GeForce RTX 3060 Ti (ID=0x2489)
+    Vendor:   NVIDIA
+    VRAM:     8024 MB
+    Driver:   32.0.15.8088
+Initialize mono
+Mono path[0] = 'C:/Program Files/Unity/Hub/Editor/6000.0.59f2/Editor/Data/Managed'
+Mono path[1] = 'C:/Program Files/Unity/Hub/Editor/6000.0.59f2/Editor/Data/MonoBleedingEdge/lib/mono/unityjit-win32'
+Mono config path = 'C:/Program Files/Unity/Hub/Editor/6000.0.59f2/Editor/Data/MonoBleedingEdge/etc'
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56328
+Begin MonoManager ReloadAssembly
+Registering precompiled unity dll's ...
+Register platform support module: C:/Program Files/Unity/Hub/Editor/6000.0.59f2/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
+Registered in 0.003439 seconds.
+- Loaded All Assemblies, in  0.355 seconds
+Native extension for WindowsStandalone target not found
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  0.338 seconds
+Domain Reload Profiling: 689ms
+	BeginReloadAssembly (116ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (0ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (1ms)
+	RebuildCommonClasses (34ms)
+	RebuildNativeTypeToScriptingClass (11ms)
+	initialDomainReloadingComplete (47ms)
+	LoadAllAssembliesAndSetupDomain (143ms)
+		LoadAssemblies (112ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (141ms)
+			TypeCache.Refresh (139ms)
+				TypeCache.ScanAssembly (128ms)
+			BuildScriptInfoCaches (0ms)
+			ResolveRequiredComponents (0ms)
+	FinalizeReload (338ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (281ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (20ms)
+			SetLoadedEditorAssemblies (4ms)
+			BeforeProcessingInitializeOnLoad (60ms)
+			ProcessInitializeOnLoadAttributes (145ms)
+			ProcessInitializeOnLoadMethodAttributes (51ms)
+			AfterProcessingInitializeOnLoad (0ms)
+			EditorAssembliesLoaded (0ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (0ms)
+========================================================================
+Worker process is ready to serve import requests
+Import Worker Mode flag is 0x00
+Begin MonoManager ReloadAssembly
+Symbol file LoadedFromMemory is not a mono symbol file
+- Loaded All Assemblies, in  0.915 seconds
+Refreshing native plugins compatible for Editor in 7.38 ms, found 5 plugins.
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 8.16 ms, found 5 plugins.
+Package Manager log level set to [2]
+[Package Manager] Failed to launch server process. Reason: Unity was launched with the -noUpm command-line argument
+[Package Manager] Unable to send message (not connected to server process).
+[Package Manager] Cannot connect to Unity Package Manager local server
+System.Reflection.TargetInvocationException: Exception has been thrown by the target of an invocation. ---> System.NullReferenceException: Object reference not set to an instance of an object
+  at Unity.Multiplayer.Playmode.Workflow.Editor.ProjectDataStore..ctor (System.String directory) [0x0006e] in .\Library\PackageCache\com.unity.multiplayer.playmode@96fe8db2c047\Workflow\Editor\Configuration\ProjectDataStore.cs:55 
+  at Unity.Multiplayer.Playmode.Workflow.Editor.ProjectDataStore.GetMain () [0x00000] in .\Library\PackageCache\com.unity.multiplayer.playmode@96fe8db2c047\Workflow\Editor\Configuration\ProjectDataStore.cs:36 
+  at Unity.Multiplayer.Playmode.Workflow.Editor.WorkflowMainEditorContext..ctor (Unity.Multiplayer.Playmode.VirtualProjects.Editor.MainEditorContext mainEditorContext) [0x0002c] in .\Library\PackageCache\com.unity.multiplayer.playmode@96fe8db2c047\Workflow\Editor\Contexts\WorkflowMainEditorContext.cs:15 
+  at Unity.Multiplayer.Playmode.Workflow.Editor.VirtualProjectWorkflow.InitializeMPPMContexts () [0x00018] in .\Library\PackageCache\com.unity.multiplayer.playmode@96fe8db2c047\Workflow\Editor\Workflow\VirtualProjectWorkflow.cs:204 
+  at Unity.Multiplayer.Playmode.Workflow.Editor.VirtualProjectWorkflow+<>c.<.cctor>b__22_0 () [0x00036] in .\Library\PackageCache\com.unity.multiplayer.playmode@96fe8db2c047\Workflow\Editor\Workflow\VirtualProjectWorkflow.cs:85 
+  at Unity.Multiplayer.Playmode.VirtualProjects.Editor.EditorContexts.SendReadyEvent () [0x00038] in .\Library\PackageCache\com.unity.multiplayer.playmode@96fe8db2c047\VirtualProjects\Editor\Contexts\EditorContexts.cs:56 
+  at (wrapper managed-to-native) System.Reflection.RuntimeMethodInfo.InternalInvoke(System.Reflection.RuntimeMethodInfo,object,object[],System.Exception&)
+  at System.Reflection.RuntimeMethodInfo.Invoke (System.Object obj, System.Reflection.BindingFlags invokeAttr, System.Reflection.Binder binder, System.Object[] parameters, System.Globalization.CultureInfo culture) [0x0006a] in <152439c387994a8da523328132967f8d>:0 
+   --- End of inner exception stack trace ---
+  at System.Reflection.RuntimeMethodInfo.Invoke (System.Object obj, System.Reflection.BindingFlags invokeAttr, System.Reflection.Binder binder, System.Object[] parameters, System.Globalization.CultureInfo culture) [0x00083] in <152439c387994a8da523328132967f8d>:0 
+  at System.Reflection.MethodBase.Invoke (System.Object obj, System.Object[] parameters) [0x00000] in <152439c387994a8da523328132967f8d>:0 
+  at UnityEditor.EditorAssemblies.ProcessInitializeOnLoadMethodAttributes () [0x00056] in <b912dbff05184439afd77d89b5fecd71>:0 
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:Internal_Log (UnityEngine.LogType,UnityEngine.LogOption,string,UnityEngine.Object)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:LogError (object)
+UnityEditor.EditorAssemblies:ProcessInitializeOnLoadMethodAttributes ()
+
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  1.384 seconds
+Domain Reload Profiling: 2289ms
+	BeginReloadAssembly (180ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (7ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (29ms)
+	RebuildCommonClasses (37ms)
+	RebuildNativeTypeToScriptingClass (12ms)
+	initialDomainReloadingComplete (67ms)
+	LoadAllAssembliesAndSetupDomain (609ms)
+		LoadAssemblies (389ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (321ms)
+			TypeCache.Refresh (219ms)
+				TypeCache.ScanAssembly (201ms)
+			BuildScriptInfoCaches (88ms)
+			ResolveRequiredComponents (10ms)
+	FinalizeReload (1385ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (1123ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (3ms)
+			SetLoadedEditorAssemblies (6ms)
+			BeforeProcessingInitializeOnLoad (246ms)
+			ProcessInitializeOnLoadAttributes (419ms)
+			ProcessInitializeOnLoadMethodAttributes (437ms)
+			AfterProcessingInitializeOnLoad (11ms)
+			EditorAssembliesLoaded (1ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (8ms)
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.01 seconds
+Refreshing native plugins compatible for Editor in 8.74 ms, found 5 plugins.
+Preloading 1 native plugins for Editor in 0.16 ms.
+Unloading 27 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 10693 unused Assets / (9.3 MB). Loaded Objects now: 11352.
+Memory consumption went from 168.4 MB to 159.1 MB.
+Total: 11.850300 ms (FindLiveObjects: 1.273100 ms CreateObjectMapping: 0.995400 ms MarkObjects: 5.637500 ms  DeleteObjects: 3.943500 ms)
+
+========================================================================
+Received Import Request.
+  Time since last request: 13770.025482 seconds.
+  path: Assets/Pandazole_Lowpoly_Asset_Bundle/Pandazole Nature Environment Pack/Models/Bones_02.fbx
+  artifactKey: Guid(8027a3d2529868740a732bdf38adb28d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Pandazole_Lowpoly_Asset_Bundle/Pandazole Nature Environment Pack/Models/Bones_02.fbx using Guid(8027a3d2529868740a732bdf38adb28d) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'bcdeac6735dd5b48fc74fd0a04c7ce93') in 0.502094 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 10
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000026 seconds.
+  path: Assets/Pandazole_Lowpoly_Asset_Bundle/Pandazole Nature Environment Pack/Models/Cactus_12_A.fbx
+  artifactKey: Guid(18a925f24183cf146bde4a3134465441) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Pandazole_Lowpoly_Asset_Bundle/Pandazole Nature Environment Pack/Models/Cactus_12_A.fbx using Guid(18a925f24183cf146bde4a3134465441) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '035f416541966f7c439fbadd9885cf48') in 0.0239989 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 9
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000026 seconds.
+  path: Assets/Pandazole_Lowpoly_Asset_Bundle/Pandazole Nature Environment Pack/Models/Cactus_27_B.fbx
+  artifactKey: Guid(14f71b5ffc751814db8bc3e024b552db) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Pandazole_Lowpoly_Asset_Bundle/Pandazole Nature Environment Pack/Models/Cactus_27_B.fbx using Guid(14f71b5ffc751814db8bc3e024b552db) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'e0cc524024bcdc4a8ad38f69a9cf4567') in 0.0177191 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 9
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000019 seconds.
+  path: Assets/Pandazole_Lowpoly_Asset_Bundle/Pandazole Nature Environment Pack/Models/CactusFlower_3.fbx
+  artifactKey: Guid(f5f1ded83b1ca8a4293d07f740ad5d79) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Pandazole_Lowpoly_Asset_Bundle/Pandazole Nature Environment Pack/Models/CactusFlower_3.fbx using Guid(f5f1ded83b1ca8a4293d07f740ad5d79) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'fc217c83cae6946d75a4a6f46844fd25') in 0.0175165 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 9
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000017 seconds.
+  path: Assets/Pandazole_Lowpoly_Asset_Bundle/Pandazole Nature Environment Pack/Models/Bush_07.fbx
+  artifactKey: Guid(5cc8ac67a0f285f45a51537ff04ee45b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Pandazole_Lowpoly_Asset_Bundle/Pandazole Nature Environment Pack/Models/Bush_07.fbx using Guid(5cc8ac67a0f285f45a51537ff04ee45b) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'fa940e9c65ede76cf78c66208a63dadc') in 0.0167733 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 9
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000018 seconds.
+  path: Assets/Pandazole_Lowpoly_Asset_Bundle/Pandazole Nature Environment Pack/Models/Coral_16.fbx
+  artifactKey: Guid(fe069c3b679f15d4da8c0e3d2436c10b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Pandazole_Lowpoly_Asset_Bundle/Pandazole Nature Environment Pack/Models/Coral_16.fbx using Guid(fe069c3b679f15d4da8c0e3d2436c10b) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '1320726362eb4f7fd0e90c3f4e154e35') in 0.0178413 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 9
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000021 seconds.
+  path: Assets/Pandazole_Lowpoly_Asset_Bundle/Pandazole Nature Environment Pack/Models/Coral_23.fbx
+  artifactKey: Guid(6cd367109ae24ba43bbc16a4a3e8bfea) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Pandazole_Lowpoly_Asset_Bundle/Pandazole Nature Environment Pack/Models/Coral_23.fbx using Guid(6cd367109ae24ba43bbc16a4a3e8bfea) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '8f961dbe0f016fa97d289be2bb726aea') in 0.0169547 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 9
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000025 seconds.
+  path: Assets/Pandazole_Lowpoly_Asset_Bundle/Pandazole Nature Environment Pack/Models/Coral_11.fbx
+  artifactKey: Guid(f03608a7edc86aa42a6f5d4726885c74) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Pandazole_Lowpoly_Asset_Bundle/Pandazole Nature Environment Pack/Models/Coral_11.fbx using Guid(f03608a7edc86aa42a6f5d4726885c74) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'd352fd10facceb402e18b5f4652c94ea') in 0.0179435 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 9
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000020 seconds.
+  path: Assets/Pandazole_Lowpoly_Asset_Bundle/Pandazole Nature Environment Pack/Models/Cactus_01_B.fbx
+  artifactKey: Guid(6e16a86368f06824aa155b6abf39b9ff) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Pandazole_Lowpoly_Asset_Bundle/Pandazole Nature Environment Pack/Models/Cactus_01_B.fbx using Guid(6e16a86368f06824aa155b6abf39b9ff) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '823810c00774bd7f59a144ac7b643478') in 0.017654 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 9
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000019 seconds.
+  path: Assets/Pandazole_Lowpoly_Asset_Bundle/Pandazole Nature Environment Pack/Models/Coral_01.fbx
+  artifactKey: Guid(b421dfcbbdc702c4580aa32d45738678) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Pandazole_Lowpoly_Asset_Bundle/Pandazole Nature Environment Pack/Models/Coral_01.fbx using Guid(b421dfcbbdc702c4580aa32d45738678) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '27d8dac95c31d20fe4de07147841af0e') in 0.0178815 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 9
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000017 seconds.
+  path: Assets/Pandazole_Lowpoly_Asset_Bundle/Pandazole Nature Environment Pack/Models/Bush_05.fbx
+  artifactKey: Guid(2d806d9b99770c543bde0e26f9bb421c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Pandazole_Lowpoly_Asset_Bundle/Pandazole Nature Environment Pack/Models/Bush_05.fbx using Guid(2d806d9b99770c543bde0e26f9bb421c) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '41fc6448e7cd44a07c6fb68d45ef04a7') in 0.0166111 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 9
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000023 seconds.
+  path: Assets/Pandazole_Lowpoly_Asset_Bundle/Pandazole Nature Environment Pack/Models/Cactus_31_A.fbx
+  artifactKey: Guid(fdf4f2abba686f644a33891009b3694a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Pandazole_Lowpoly_Asset_Bundle/Pandazole Nature Environment Pack/Models/Cactus_31_A.fbx using Guid(fdf4f2abba686f644a33891009b3694a) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '0954899ab1b76a569a5917fbfaa4b744') in 0.0181519 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 9
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000026 seconds.
+  path: Assets/Pandazole_Lowpoly_Asset_Bundle/Pandazole Nature Environment Pack/Models/Cactus_03_A.fbx
+  artifactKey: Guid(2bbfe684476b10d449ff9a4edb230f7f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Pandazole_Lowpoly_Asset_Bundle/Pandazole Nature Environment Pack/Models/Cactus_03_A.fbx using Guid(2bbfe684476b10d449ff9a4edb230f7f) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '9374c59270e602ee6e93eef55bc4cf50') in 0.0232479 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 9
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000021 seconds.
+  path: Assets/Pandazole_Lowpoly_Asset_Bundle/Pandazole Nature Environment Pack/Models/Coral_02.fbx
+  artifactKey: Guid(b555d7a9406019244b7f7189534f3d02) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Pandazole_Lowpoly_Asset_Bundle/Pandazole Nature Environment Pack/Models/Coral_02.fbx using Guid(b555d7a9406019244b7f7189534f3d02) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'b90acc46ebe322775da97d0ba195aadc') in 0.0215451 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 9
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000019 seconds.
+  path: Assets/Pandazole_Lowpoly_Asset_Bundle/Pandazole Nature Environment Pack/Prefabs/Cactus_18_B.prefab
+  artifactKey: Guid(8beca631048c77a49849ae6f58f43ddb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Pandazole_Lowpoly_Asset_Bundle/Pandazole Nature Environment Pack/Prefabs/Cactus_18_B.prefab using Guid(8beca631048c77a49849ae6f58f43ddb) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'a7eb5eba78466c8dc98b31e0fdab136e') in 0.0138298 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 10
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000020 seconds.
+  path: Assets/Pandazole_Lowpoly_Asset_Bundle/Pandazole Nature Environment Pack/Prefabs/Cactus_22_A.prefab
+  artifactKey: Guid(95af78ca91f79c84294da4ca4dd3c166) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Pandazole_Lowpoly_Asset_Bundle/Pandazole Nature Environment Pack/Prefabs/Cactus_22_A.prefab using Guid(95af78ca91f79c84294da4ca4dd3c166) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'de16aa00e8cd7d8282d5c617529f1602') in 0.0148672 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 10
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000033 seconds.
+  path: Assets/Pandazole_Lowpoly_Asset_Bundle/Pandazole Nature Environment Pack/Prefabs/CactusFlower_2.prefab
+  artifactKey: Guid(3a6d08a9bb03c9e41b346ba29657a15e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Pandazole_Lowpoly_Asset_Bundle/Pandazole Nature Environment Pack/Prefabs/CactusFlower_2.prefab using Guid(3a6d08a9bb03c9e41b346ba29657a15e) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '600a2ea3077f15f4384cce8dde771f19') in 0.0146311 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 10
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000018 seconds.
+  path: Assets/Pandazole_Lowpoly_Asset_Bundle/Pandazole Nature Environment Pack/Prefabs/Coral_21.prefab
+  artifactKey: Guid(0a54c17c3a09d2b41b5577cabdd57465) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Pandazole_Lowpoly_Asset_Bundle/Pandazole Nature Environment Pack/Prefabs/Coral_21.prefab using Guid(0a54c17c3a09d2b41b5577cabdd57465) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '8134a470cdacf4593510895f20795013') in 0.0132524 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 10
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000019 seconds.
+  path: Assets/Pandazole_Lowpoly_Asset_Bundle/Pandazole Nature Environment Pack/Prefabs/Cactus_09_B.prefab
+  artifactKey: Guid(515e1f6415abf1148b4023a3d6201659) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Pandazole_Lowpoly_Asset_Bundle/Pandazole Nature Environment Pack/Prefabs/Cactus_09_B.prefab using Guid(515e1f6415abf1148b4023a3d6201659) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'd628265810cb224f51938e320d7fd16e') in 0.0144723 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 10
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000021 seconds.
+  path: Assets/Pandazole_Lowpoly_Asset_Bundle/Pandazole Nature Environment Pack/Prefabs/Cactus_21_A.prefab
+  artifactKey: Guid(a7c943eb5c1a57445adec1624a4be26d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Pandazole_Lowpoly_Asset_Bundle/Pandazole Nature Environment Pack/Prefabs/Cactus_21_A.prefab using Guid(a7c943eb5c1a57445adec1624a4be26d) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '561cb735ff310be3387c3b05b46d5ffc') in 0.016236 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 10
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000020 seconds.
+  path: Assets/Pandazole_Lowpoly_Asset_Bundle/Pandazole Nature Environment Pack/Prefabs/Cactus_05_A.prefab
+  artifactKey: Guid(7af44564a8404824eaf4e682b99d0c9b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Pandazole_Lowpoly_Asset_Bundle/Pandazole Nature Environment Pack/Prefabs/Cactus_05_A.prefab using Guid(7af44564a8404824eaf4e682b99d0c9b) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '9c872843c32c2349fc8c4c8b57669eef') in 0.0146956 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 10
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000032 seconds.
+  path: Assets/Pandazole_Lowpoly_Asset_Bundle/Pandazole Nature Environment Pack/Prefabs/Cactus_28_A.prefab
+  artifactKey: Guid(5f6f21a7c44bdf14b959332fdedf6379) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Pandazole_Lowpoly_Asset_Bundle/Pandazole Nature Environment Pack/Prefabs/Cactus_28_A.prefab using Guid(5f6f21a7c44bdf14b959332fdedf6379) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '03bbb4205d9b4ce5f501cdd4deff087e') in 0.0160713 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 10
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000020 seconds.
+  path: Assets/Pandazole_Lowpoly_Asset_Bundle/Pandazole Nature Environment Pack/Prefabs/Bones_02.prefab
+  artifactKey: Guid(8d7853af1b66f0e4493c6429fee91a70) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Pandazole_Lowpoly_Asset_Bundle/Pandazole Nature Environment Pack/Prefabs/Bones_02.prefab using Guid(8d7853af1b66f0e4493c6429fee91a70) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '18a59eefe0f423e448d7915d50748ea6') in 0.0145668 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 10
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000019 seconds.
+  path: Assets/Pandazole_Lowpoly_Asset_Bundle/Pandazole Nature Environment Pack/Prefabs/Coral_08.prefab
+  artifactKey: Guid(500924368d61e614bb4cc304d595f776) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Pandazole_Lowpoly_Asset_Bundle/Pandazole Nature Environment Pack/Prefabs/Coral_08.prefab using Guid(500924368d61e614bb4cc304d595f776) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '230899845cba4467642361f00b75c9e8') in 0.013562 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 10
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000020 seconds.
+  path: Assets/Pandazole_Lowpoly_Asset_Bundle/Pandazole Nature Environment Pack/Prefabs/Bush_03.prefab
+  artifactKey: Guid(befc3921877d7224e9e2f6d593627c29) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Pandazole_Lowpoly_Asset_Bundle/Pandazole Nature Environment Pack/Prefabs/Bush_03.prefab using Guid(befc3921877d7224e9e2f6d593627c29) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '7a2a148f91600731ade2b02d72f7d647') in 0.0159509 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 10
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000024 seconds.
+  path: Assets/Pandazole_Lowpoly_Asset_Bundle/Pandazole Nature Environment Pack/Prefabs/Cactus_30_A.prefab
+  artifactKey: Guid(8adce465740c1204caf7262f9ef40f1f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Pandazole_Lowpoly_Asset_Bundle/Pandazole Nature Environment Pack/Prefabs/Cactus_30_A.prefab using Guid(8adce465740c1204caf7262f9ef40f1f) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '89d91f85232accf046a41e02eb75cd7a') in 0.0181789 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 10
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000030 seconds.
+  path: Assets/Pandazole_Lowpoly_Asset_Bundle/Pandazole Nature Environment Pack/Prefabs/Coral_24.prefab
+  artifactKey: Guid(11beb10c73b36d340a83834cad2d20eb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Pandazole_Lowpoly_Asset_Bundle/Pandazole Nature Environment Pack/Prefabs/Coral_24.prefab using Guid(11beb10c73b36d340a83834cad2d20eb) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '7c8cee6a14fe5f14549606a33eb2ee0b') in 0.0155661 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 10
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000019 seconds.
+  path: Assets/Pandazole_Lowpoly_Asset_Bundle/Pandazole Nature Environment Pack/Prefabs/Bones_01.prefab
+  artifactKey: Guid(ae1110b538793fe40ab50957f1143dd4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Pandazole_Lowpoly_Asset_Bundle/Pandazole Nature Environment Pack/Prefabs/Bones_01.prefab using Guid(ae1110b538793fe40ab50957f1143dd4) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '05181c00181aa5ee33e7fcb6350e5661') in 0.0149074 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 10
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000019 seconds.
+  path: Assets/Pandazole_Lowpoly_Asset_Bundle/Pandazole Nature Environment Pack/Prefabs/Cactus_10_A.prefab
+  artifactKey: Guid(33d3fcff0fd758b4b94015e72dd1febf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Pandazole_Lowpoly_Asset_Bundle/Pandazole Nature Environment Pack/Prefabs/Cactus_10_A.prefab using Guid(33d3fcff0fd758b4b94015e72dd1febf) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '2159207e6a13dd0076d6b904c74a323e') in 0.0164901 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 10
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000018 seconds.
+  path: Assets/Pandazole_Lowpoly_Asset_Bundle/Pandazole Nature Environment Pack/Prefabs/Cactus_01_A.prefab
+  artifactKey: Guid(c8559f103b951854baecc42c34318be8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Pandazole_Lowpoly_Asset_Bundle/Pandazole Nature Environment Pack/Prefabs/Cactus_01_A.prefab using Guid(c8559f103b951854baecc42c34318be8) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '841f0af6da34fa214845823450e4e589') in 0.0146272 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 10
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000023 seconds.
+  path: Assets/Pandazole_Lowpoly_Asset_Bundle/Pandazole Nature Environment Pack/Prefabs/Coral_10.prefab
+  artifactKey: Guid(e7d873c96fab78342ac9013c35ec1d94) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Pandazole_Lowpoly_Asset_Bundle/Pandazole Nature Environment Pack/Prefabs/Coral_10.prefab using Guid(e7d873c96fab78342ac9013c35ec1d94) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'fff71b7cfa3ab55b67468b7b7a223b6e') in 0.0172031 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 10
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000042 seconds.
+  path: Assets/Pandazole_Lowpoly_Asset_Bundle/Pandazole Nature Environment Pack/Prefabs/Cactus_08_A.prefab
+  artifactKey: Guid(b7feb492ead0777429f14b13de1b85a9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Pandazole_Lowpoly_Asset_Bundle/Pandazole Nature Environment Pack/Prefabs/Cactus_08_A.prefab using Guid(b7feb492ead0777429f14b13de1b85a9) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'bb02e9a4d4386a5006b8aa703cf9bdc4') in 0.015089 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 10
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000019 seconds.
+  path: Assets/Pandazole_Lowpoly_Asset_Bundle/Pandazole Nature Environment Pack/Prefabs/Coral_03.prefab
+  artifactKey: Guid(a5f699a4c6a81414fbeb528dfde804c9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Pandazole_Lowpoly_Asset_Bundle/Pandazole Nature Environment Pack/Prefabs/Coral_03.prefab using Guid(a5f699a4c6a81414fbeb528dfde804c9) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'f42f1a4237f0aaab5092146cb44e48d3') in 0.0138337 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 10
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000018 seconds.
+  path: Assets/Pandazole_Lowpoly_Asset_Bundle/Pandazole Nature Environment Pack/Prefabs/Cactus_27_A.prefab
+  artifactKey: Guid(c4c3977fdfc2d3e41839ed8e67bb0298) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Pandazole_Lowpoly_Asset_Bundle/Pandazole Nature Environment Pack/Prefabs/Cactus_27_A.prefab using Guid(c4c3977fdfc2d3e41839ed8e67bb0298) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '61b9986396ede5c4dc60c6acf02cc4df') in 0.0154012 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 10
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000021 seconds.
+  path: Assets/Pandazole_Lowpoly_Asset_Bundle/Pandazole Nature Environment Pack/Prefabs/Cactus_11_B.prefab
+  artifactKey: Guid(708660f96d664a24997b1ea76fa7a39d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Pandazole_Lowpoly_Asset_Bundle/Pandazole Nature Environment Pack/Prefabs/Cactus_11_B.prefab using Guid(708660f96d664a24997b1ea76fa7a39d) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'bcba5667827400bb6a30c8f7eee55bb4') in 0.0153846 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 10
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000019 seconds.
+  path: Assets/Pandazole_Lowpoly_Asset_Bundle/Pandazole Nature Environment Pack/Prefabs/Bones_06.prefab
+  artifactKey: Guid(3f6fde56de2e39c4fb79b5b04a04c3e0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Pandazole_Lowpoly_Asset_Bundle/Pandazole Nature Environment Pack/Prefabs/Bones_06.prefab using Guid(3f6fde56de2e39c4fb79b5b04a04c3e0) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '711a4adf2c6e7c76087fffd658902231') in 0.0136517 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 10
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000029 seconds.
+  path: Assets/Pandazole_Lowpoly_Asset_Bundle/Pandazole Nature Environment Pack/Models/Cactus_24_B.fbx
+  artifactKey: Guid(4d64dfdc8184e2c45ae2b5a400c2b05f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Pandazole_Lowpoly_Asset_Bundle/Pandazole Nature Environment Pack/Models/Cactus_24_B.fbx using Guid(4d64dfdc8184e2c45ae2b5a400c2b05f) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'e0df98924f20a2ff5183e7e7cdeb009d') in 0.0177117 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 9
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000019 seconds.
+  path: Assets/Pandazole_Lowpoly_Asset_Bundle/Pandazole Nature Environment Pack/Models/Cactus_06_A.fbx
+  artifactKey: Guid(421b9f71b6930ef4bb2893f5b949e6bd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Pandazole_Lowpoly_Asset_Bundle/Pandazole Nature Environment Pack/Models/Cactus_06_A.fbx using Guid(421b9f71b6930ef4bb2893f5b949e6bd) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '266d288d8bbe546fcf43d007848d36ed') in 0.0167373 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 9
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000018 seconds.
+  path: Assets/Pandazole_Lowpoly_Asset_Bundle/Pandazole Nature Environment Pack/Models/Cactus_13_B.fbx
+  artifactKey: Guid(6967c5fbb729d2c4596bbd9e25213701) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Pandazole_Lowpoly_Asset_Bundle/Pandazole Nature Environment Pack/Models/Cactus_13_B.fbx using Guid(6967c5fbb729d2c4596bbd9e25213701) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'd801d867fb11ca2b2be5b846cba29a7c') in 0.0171061 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 9
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000018 seconds.
+  path: Assets/Pandazole_Lowpoly_Asset_Bundle/Pandazole Nature Environment Pack/Models/Coral_26.fbx
+  artifactKey: Guid(005ab836306c4a9449a2636fb31d6fc3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Pandazole_Lowpoly_Asset_Bundle/Pandazole Nature Environment Pack/Models/Coral_26.fbx using Guid(005ab836306c4a9449a2636fb31d6fc3) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '6105d51e68a9cd3922c7c43c42ec5aef') in 0.0174098 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 9
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000021 seconds.
+  path: Assets/Pandazole_Lowpoly_Asset_Bundle/Pandazole Nature Environment Pack/Prefabs/Bush_02.prefab
+  artifactKey: Guid(ea2e404c4f4ed1d41b78144c30acec63) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Pandazole_Lowpoly_Asset_Bundle/Pandazole Nature Environment Pack/Prefabs/Bush_02.prefab using Guid(ea2e404c4f4ed1d41b78144c30acec63) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '84c703b0503f5575f0e281f320e03950') in 0.0160673 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 10
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000026 seconds.
+  path: Assets/Pandazole_Lowpoly_Asset_Bundle/Pandazole Nature Environment Pack/Prefabs/Cactus_02_B.prefab
+  artifactKey: Guid(25ef3ce5470a28c45968103cdc5b8e5e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Pandazole_Lowpoly_Asset_Bundle/Pandazole Nature Environment Pack/Prefabs/Cactus_02_B.prefab using Guid(25ef3ce5470a28c45968103cdc5b8e5e) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'fbfddd363a000ecc5076f03e4a8be8d6') in 0.0157462 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 10
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000019 seconds.
+  path: Assets/Pandazole_Lowpoly_Asset_Bundle/Pandazole Nature Environment Pack/Prefabs/Bush_07.prefab
+  artifactKey: Guid(ffa0f996f5cdedf43a615ea7198d838e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Pandazole_Lowpoly_Asset_Bundle/Pandazole Nature Environment Pack/Prefabs/Bush_07.prefab using Guid(ffa0f996f5cdedf43a615ea7198d838e) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'c26ed800e6b138d4ba1c766ee37f038f') in 0.0153075 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 10
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000018 seconds.
+  path: Assets/Pandazole_Lowpoly_Asset_Bundle/Pandazole Nature Environment Pack/Models/Bush_13.fbx
+  artifactKey: Guid(5f35391e6326da942b91372612d47c8d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Pandazole_Lowpoly_Asset_Bundle/Pandazole Nature Environment Pack/Models/Bush_13.fbx using Guid(5f35391e6326da942b91372612d47c8d) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '7149646278e94f773f34118b510f1406') in 0.0176968 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 9
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000021 seconds.
+  path: Assets/Pandazole_Lowpoly_Asset_Bundle/Pandazole Nature Environment Pack/Prefabs/Cactus_20_A.prefab
+  artifactKey: Guid(c667a0ffa96c0174390af555db2af3ce) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Pandazole_Lowpoly_Asset_Bundle/Pandazole Nature Environment Pack/Prefabs/Cactus_20_A.prefab using Guid(c667a0ffa96c0174390af555db2af3ce) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'c59c3c85739bb905661ea5bf3251343d') in 0.0154653 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 10
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000021 seconds.
+  path: Assets/Pandazole_Lowpoly_Asset_Bundle/Pandazole Nature Environment Pack/Models/Coral_09.fbx
+  artifactKey: Guid(85fc9229e61470f4f95635896a0146c4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Pandazole_Lowpoly_Asset_Bundle/Pandazole Nature Environment Pack/Models/Coral_09.fbx using Guid(85fc9229e61470f4f95635896a0146c4) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '73c54f10a93c57f3e076059a911c7dba') in 0.0166348 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 9
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000029 seconds.
+  path: Assets/Pandazole_Lowpoly_Asset_Bundle/Pandazole Nature Environment Pack/Prefabs/Coral_31.prefab
+  artifactKey: Guid(1a73f86d0d77585459e58e7bd602d0fe) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Pandazole_Lowpoly_Asset_Bundle/Pandazole Nature Environment Pack/Prefabs/Coral_31.prefab using Guid(1a73f86d0d77585459e58e7bd602d0fe) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '31b0b7dcbc1600d6d88f9a7088b4393e') in 0.0142375 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 10
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000021 seconds.
+  path: Assets/Pandazole_Lowpoly_Asset_Bundle/Pandazole Nature Environment Pack/Prefabs/Flower_01.prefab
+  artifactKey: Guid(fa3489bcbc57b444ab34041743c96c36) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Pandazole_Lowpoly_Asset_Bundle/Pandazole Nature Environment Pack/Prefabs/Flower_01.prefab using Guid(fa3489bcbc57b444ab34041743c96c36) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'f7101014498cc0a08cb4a147b8b46a4b') in 0.0135622 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 10
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000018 seconds.
+  path: Assets/Pandazole_Lowpoly_Asset_Bundle/Pandazole Nature Environment Pack/Prefabs/Flower_02.prefab
+  artifactKey: Guid(961bc67184cb33d4594f6b33322ee462) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Pandazole_Lowpoly_Asset_Bundle/Pandazole Nature Environment Pack/Prefabs/Flower_02.prefab using Guid(961bc67184cb33d4594f6b33322ee462) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'fd1d1532cd55c1eee8ba25daa0deb5dc') in 0.013304 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 10
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000017 seconds.
+  path: Assets/Pandazole_Lowpoly_Asset_Bundle/Pandazole Nature Environment Pack/Prefabs/Flower_10.prefab
+  artifactKey: Guid(62c8cdd661639744489e88180988d15d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Pandazole_Lowpoly_Asset_Bundle/Pandazole Nature Environment Pack/Prefabs/Flower_10.prefab using Guid(62c8cdd661639744489e88180988d15d) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'aec0bb2890b3040ae3ef44c15bd2a85f') in 0.0153356 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 10
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000020 seconds.
+  path: Assets/Pandazole_Lowpoly_Asset_Bundle/Pandazole Nature Environment Pack/Prefabs/Cactus_39_B.prefab
+  artifactKey: Guid(0e9522f6cdb97164da9abdede3cff179) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Pandazole_Lowpoly_Asset_Bundle/Pandazole Nature Environment Pack/Prefabs/Cactus_39_B.prefab using Guid(0e9522f6cdb97164da9abdede3cff179) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'd6dbaec1437ce32eedf9783a15764fbd') in 0.015195 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 10
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000027 seconds.
+  path: Assets/Pandazole_Lowpoly_Asset_Bundle/Pandazole Nature Environment Pack/Models/Cactus_31_B.fbx
+  artifactKey: Guid(2a1c703246b69384696b02307e08ee33) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Pandazole_Lowpoly_Asset_Bundle/Pandazole Nature Environment Pack/Models/Cactus_31_B.fbx using Guid(2a1c703246b69384696b02307e08ee33) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '94bb8f42f8228c0a1768a81365e7cf56') in 0.0171394 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 9
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000018 seconds.
+  path: Assets/Pandazole_Lowpoly_Asset_Bundle/Pandazole Nature Environment Pack/Prefabs/Flower_25.prefab
+  artifactKey: Guid(62746b6c21087524395c845c4c37b4da) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Pandazole_Lowpoly_Asset_Bundle/Pandazole Nature Environment Pack/Prefabs/Flower_25.prefab using Guid(62746b6c21087524395c845c4c37b4da) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'd3d3e976dcbf4f1db0cf9332f4b81657') in 0.0142423 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 10
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000019 seconds.
+  path: Assets/Pandazole_Lowpoly_Asset_Bundle/Pandazole Nature Environment Pack/Prefabs/Grass_01.prefab
+  artifactKey: Guid(1bece3f1f6d9c894eb5838683cb91585) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Pandazole_Lowpoly_Asset_Bundle/Pandazole Nature Environment Pack/Prefabs/Grass_01.prefab using Guid(1bece3f1f6d9c894eb5838683cb91585) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '6d536046b8674f11385d7db44fac28ef') in 0.0127027 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 10
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000018 seconds.
+  path: Assets/Pandazole_Lowpoly_Asset_Bundle/Pandazole Nature Environment Pack/Prefabs/Flower_23.prefab
+  artifactKey: Guid(80226811445119940b93772ea46ea51d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Pandazole_Lowpoly_Asset_Bundle/Pandazole Nature Environment Pack/Prefabs/Flower_23.prefab using Guid(80226811445119940b93772ea46ea51d) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'f8969da00659d1847cea4ae8b3c70716') in 0.0149629 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 10
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000023 seconds.
+  path: Assets/Pandazole_Lowpoly_Asset_Bundle/Pandazole Nature Environment Pack/Prefabs/Flower_32.prefab
+  artifactKey: Guid(f604ee7f43f130943949813a3306080b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Pandazole_Lowpoly_Asset_Bundle/Pandazole Nature Environment Pack/Prefabs/Flower_32.prefab using Guid(f604ee7f43f130943949813a3306080b) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'fc472eaef969b60a2a3ab5c6f4dbccd5') in 0.0161133 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 10
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000028 seconds.
+  path: Assets/Pandazole_Lowpoly_Asset_Bundle/Pandazole Nature Environment Pack/Prefabs/Grass_13.prefab
+  artifactKey: Guid(24065c8084686634b80f3182de40ad38) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Pandazole_Lowpoly_Asset_Bundle/Pandazole Nature Environment Pack/Prefabs/Grass_13.prefab using Guid(24065c8084686634b80f3182de40ad38) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '0f9eb6722f9fd8385c93b6fc6e485e82') in 0.015123 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 10
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000019 seconds.
+  path: Assets/Pandazole_Lowpoly_Asset_Bundle/Pandazole Nature Environment Pack/Prefabs/Grass_17.prefab
+  artifactKey: Guid(384943733caf7164db07fb9a0d88da6f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Pandazole_Lowpoly_Asset_Bundle/Pandazole Nature Environment Pack/Prefabs/Grass_17.prefab using Guid(384943733caf7164db07fb9a0d88da6f) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'b0d89caec82ed8b5ec4a6c5966b30a88') in 0.0154156 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 10
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000018 seconds.
+  path: Assets/Pandazole_Lowpoly_Asset_Bundle/Pandazole Nature Environment Pack/Prefabs/Flower_33.prefab
+  artifactKey: Guid(4f0ee6c48a2e25c47ac86f543cd85647) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Pandazole_Lowpoly_Asset_Bundle/Pandazole Nature Environment Pack/Prefabs/Flower_33.prefab using Guid(4f0ee6c48a2e25c47ac86f543cd85647) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'c2e36269f969fc65806d041a015b856c') in 0.0150614 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 10
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000021 seconds.
+  path: Assets/Pandazole_Lowpoly_Asset_Bundle/Pandazole Nature Environment Pack/Prefabs/Flower_21.prefab
+  artifactKey: Guid(f541db3448eff864c9be98349a7f39c0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Pandazole_Lowpoly_Asset_Bundle/Pandazole Nature Environment Pack/Prefabs/Flower_21.prefab using Guid(f541db3448eff864c9be98349a7f39c0) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '384ab76b761a3168e0e8f8662b90db2c') in 0.0152871 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 10
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000022 seconds.
+  path: Assets/Pandazole_Lowpoly_Asset_Bundle/Pandazole Nature Environment Pack/Prefabs/Flower_30.prefab
+  artifactKey: Guid(a480982a6015acf429d9add6f2140ee3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Pandazole_Lowpoly_Asset_Bundle/Pandazole Nature Environment Pack/Prefabs/Flower_30.prefab using Guid(a480982a6015acf429d9add6f2140ee3) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'b414cb0d44e2265d859c97a9ce057dee') in 0.0160064 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 10
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000026 seconds.
+  path: Assets/Pandazole_Lowpoly_Asset_Bundle/Pandazole Nature Environment Pack/Models/Coral_15.fbx
+  artifactKey: Guid(b8134a8430d77dd40b7fd5ceec937e40) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Pandazole_Lowpoly_Asset_Bundle/Pandazole Nature Environment Pack/Models/Coral_15.fbx using Guid(b8134a8430d77dd40b7fd5ceec937e40) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'bf49c218935861c68797e37f210fce5b') in 0.0183878 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 9
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000018 seconds.
+  path: Assets/Pandazole_Lowpoly_Asset_Bundle/Pandazole Nature Environment Pack/Models/Coral_21.fbx
+  artifactKey: Guid(1f1573f8b801a074ea710afb6f65bb2c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Pandazole_Lowpoly_Asset_Bundle/Pandazole Nature Environment Pack/Models/Coral_21.fbx using Guid(1f1573f8b801a074ea710afb6f65bb2c) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'e59673dfd4a6acfa49819d98ed971acb') in 0.0170185 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 9
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000025 seconds.
+  path: Assets/Pandazole_Lowpoly_Asset_Bundle/Pandazole Nature Environment Pack/Models/Cactus_39_B.fbx
+  artifactKey: Guid(6b917a180671c264fab432514cdf873d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Pandazole_Lowpoly_Asset_Bundle/Pandazole Nature Environment Pack/Models/Cactus_39_B.fbx using Guid(6b917a180671c264fab432514cdf873d) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '1a02ae15249f1a0c187d8988153182c0') in 0.0188984 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 9
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000019 seconds.
+  path: Assets/Pandazole_Lowpoly_Asset_Bundle/Pandazole Nature Environment Pack/Prefabs/Grass_35.prefab
+  artifactKey: Guid(8b0b57d07259e3443bd846168f1ebf4a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Pandazole_Lowpoly_Asset_Bundle/Pandazole Nature Environment Pack/Prefabs/Grass_35.prefab using Guid(8b0b57d07259e3443bd846168f1ebf4a) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '83750d66b289e3157a3aa0d8d8926c55') in 0.0174866 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 10
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000023 seconds.
+  path: Assets/Pandazole_Lowpoly_Asset_Bundle/Pandazole Nature Environment Pack/Prefabs/HardRock_09.prefab
+  artifactKey: Guid(003d83dca6d86274fb16c4b28f62a7b8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Pandazole_Lowpoly_Asset_Bundle/Pandazole Nature Environment Pack/Prefabs/HardRock_09.prefab using Guid(003d83dca6d86274fb16c4b28f62a7b8) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '5a3b2788707a8437eae70385f1199667') in 0.0159094 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 10
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000028 seconds.
+  path: Assets/Pandazole_Lowpoly_Asset_Bundle/Pandazole Nature Environment Pack/Prefabs/HardRock_07.prefab
+  artifactKey: Guid(01791b7de4fff774d955e258a9dd3927) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Pandazole_Lowpoly_Asset_Bundle/Pandazole Nature Environment Pack/Prefabs/HardRock_07.prefab using Guid(01791b7de4fff774d955e258a9dd3927) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '3820d35724e81babd3a733c466ed63e9') in 0.0145088 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 10
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000017 seconds.
+  path: Assets/Pandazole_Lowpoly_Asset_Bundle/Pandazole Nature Environment Pack/Prefabs/HardRock_18.prefab
+  artifactKey: Guid(cee7e7930fc04d945aa540f70ced0f72) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Pandazole_Lowpoly_Asset_Bundle/Pandazole Nature Environment Pack/Prefabs/HardRock_18.prefab using Guid(cee7e7930fc04d945aa540f70ced0f72) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'dd8c2321ea47ba5b7099895292c828a4') in 0.0142726 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 10
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000017 seconds.
+  path: Assets/Pandazole_Lowpoly_Asset_Bundle/Pandazole Nature Environment Pack/Prefabs/HardRock_20.prefab
+  artifactKey: Guid(0d56bd5de85e04b49b5c1620732ef173) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Pandazole_Lowpoly_Asset_Bundle/Pandazole Nature Environment Pack/Prefabs/HardRock_20.prefab using Guid(0d56bd5de85e04b49b5c1620732ef173) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '96ac646b00cc2a61b30b629c3c5fb17d') in 0.014027 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 10
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000019 seconds.
+  path: Assets/Pandazole_Lowpoly_Asset_Bundle/Pandazole Nature Environment Pack/Prefabs/Grass_26.prefab
+  artifactKey: Guid(d610987621ae2f34bb4c83367605937c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Pandazole_Lowpoly_Asset_Bundle/Pandazole Nature Environment Pack/Prefabs/Grass_26.prefab using Guid(d610987621ae2f34bb4c83367605937c) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'c982f231e96373377ea5222274374248') in 0.0136562 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 10
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000021 seconds.
+  path: Assets/Pandazole_Lowpoly_Asset_Bundle/Pandazole Nature Environment Pack/Prefabs/Grass_39.prefab
+  artifactKey: Guid(2dbebe466fec07444a6995fc47372f09) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Pandazole_Lowpoly_Asset_Bundle/Pandazole Nature Environment Pack/Prefabs/Grass_39.prefab using Guid(2dbebe466fec07444a6995fc47372f09) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'c8e094baaeaa0c6c0c268e5ddb6794f1') in 0.0139202 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 10
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000028 seconds.
+  path: Assets/Pandazole_Lowpoly_Asset_Bundle/Pandazole Nature Environment Pack/Prefabs/HardRock_13.prefab
+  artifactKey: Guid(c7fe83c52eb617d45bd0f368d30248fa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Pandazole_Lowpoly_Asset_Bundle/Pandazole Nature Environment Pack/Prefabs/HardRock_13.prefab using Guid(c7fe83c52eb617d45bd0f368d30248fa) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '979f0667c495c658a8d9e3101ecf2432') in 0.0136103 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 10
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000019 seconds.
+  path: Assets/Pandazole_Lowpoly_Asset_Bundle/Pandazole Nature Environment Pack/Prefabs/HardRock_08.prefab
+  artifactKey: Guid(d11dad93fbd94a049a0595ea4c9ad857) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Pandazole_Lowpoly_Asset_Bundle/Pandazole Nature Environment Pack/Prefabs/HardRock_08.prefab using Guid(d11dad93fbd94a049a0595ea4c9ad857) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '4f8594bc24d04659ea9dd7394c2e1a7a') in 0.0155625 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 10
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000018 seconds.
+  path: Assets/Pandazole_Lowpoly_Asset_Bundle/Pandazole Nature Environment Pack/Prefabs/HardRock_15.prefab
+  artifactKey: Guid(f85cce94b83995543bb47db1f041c082) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Pandazole_Lowpoly_Asset_Bundle/Pandazole Nature Environment Pack/Prefabs/HardRock_15.prefab using Guid(f85cce94b83995543bb47db1f041c082) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '3ebfa99f2633c5d64670befa671c45f5') in 0.0154733 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 10
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000019 seconds.
+  path: Assets/Pandazole_Lowpoly_Asset_Bundle/Pandazole Nature Environment Pack/Prefabs/Cactus_13_B.prefab
+  artifactKey: Guid(6755af35c3e3cc846a6d0f8fd224e482) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Pandazole_Lowpoly_Asset_Bundle/Pandazole Nature Environment Pack/Prefabs/Cactus_13_B.prefab using Guid(6755af35c3e3cc846a6d0f8fd224e482) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'b22cc7b47754e2c2629215e855b5bcf0') in 0.0150181 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 10
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000020 seconds.
+  path: Assets/Pandazole_Lowpoly_Asset_Bundle/Pandazole Nature Environment Pack/Prefabs/Foliage_08.prefab
+  artifactKey: Guid(defaddf27d4d3c34ea733ea6aa750d7b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Pandazole_Lowpoly_Asset_Bundle/Pandazole Nature Environment Pack/Prefabs/Foliage_08.prefab using Guid(defaddf27d4d3c34ea733ea6aa750d7b) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '707ee9b0bb06154ca7b845e3851f2b1d') in 0.0163134 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 10
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000027 seconds.
+  path: Assets/Pandazole_Lowpoly_Asset_Bundle/Pandazole Nature Environment Pack/Prefabs/Cactus_11_A.prefab
+  artifactKey: Guid(02e78a72d3a389c468d89228944117c6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Pandazole_Lowpoly_Asset_Bundle/Pandazole Nature Environment Pack/Prefabs/Cactus_11_A.prefab using Guid(02e78a72d3a389c468d89228944117c6) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '65f72a0d2a95373cceeee95eacb9ae33') in 0.0142377 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 10
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000019 seconds.
+  path: Assets/Pandazole_Lowpoly_Asset_Bundle/Pandazole Nature Environment Pack/Prefabs/HardRock_42.prefab
+  artifactKey: Guid(c79879771c4d464499888b7425ca8171) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Pandazole_Lowpoly_Asset_Bundle/Pandazole Nature Environment Pack/Prefabs/HardRock_42.prefab using Guid(c79879771c4d464499888b7425ca8171) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '40511752d14e63bc73759bdc951fff51') in 0.0154998 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 10
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000018 seconds.
+  path: Assets/Pandazole_Lowpoly_Asset_Bundle/Pandazole Nature Environment Pack/Prefabs/HardRock_29.prefab
+  artifactKey: Guid(b5d1198af13763d458d07e6eba44d247) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Pandazole_Lowpoly_Asset_Bundle/Pandazole Nature Environment Pack/Prefabs/HardRock_29.prefab using Guid(b5d1198af13763d458d07e6eba44d247) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '5fdc3e079dd74a5437f6e9e087ddad8d') in 0.0131875 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 10
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000017 seconds.
+  path: Assets/Pandazole_Lowpoly_Asset_Bundle/Pandazole Nature Environment Pack/Prefabs/HardRock_24.prefab
+  artifactKey: Guid(5575ab0b19e22914c966176dc6ca946c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Pandazole_Lowpoly_Asset_Bundle/Pandazole Nature Environment Pack/Prefabs/HardRock_24.prefab using Guid(5575ab0b19e22914c966176dc6ca946c) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'e9587c01c2bfabf1706b84b6c15aa945') in 0.0145489 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 10
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000020 seconds.
+  path: Assets/Pandazole_Lowpoly_Asset_Bundle/Pandazole Nature Environment Pack/Prefabs/HardRock_23.prefab
+  artifactKey: Guid(ef6f0e5c509d22d409aa1a9fb133c0f0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Pandazole_Lowpoly_Asset_Bundle/Pandazole Nature Environment Pack/Prefabs/HardRock_23.prefab using Guid(ef6f0e5c509d22d409aa1a9fb133c0f0) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '6ff28dde3b4b3032876f8d74d51772e8') in 0.0161794 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 10
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000029 seconds.
+  path: Assets/Pandazole_Lowpoly_Asset_Bundle/Pandazole Nature Environment Pack/Models/Cactus_27_A.fbx
+  artifactKey: Guid(b32634b0a54350d4fa927b1112f75613) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Pandazole_Lowpoly_Asset_Bundle/Pandazole Nature Environment Pack/Models/Cactus_27_A.fbx using Guid(b32634b0a54350d4fa927b1112f75613) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'fcf4cea18621bd11b51b7098c469a59a') in 0.0160481 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 9
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000020 seconds.
+  path: Assets/Pandazole_Lowpoly_Asset_Bundle/Pandazole Nature Environment Pack/Prefabs/HardRock_05.prefab
+  artifactKey: Guid(1f55f8c68246dc3438b73700695ee09b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Pandazole_Lowpoly_Asset_Bundle/Pandazole Nature Environment Pack/Prefabs/HardRock_05.prefab using Guid(1f55f8c68246dc3438b73700695ee09b) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '600e9f3a3819efaf23cef10199384a21') in 0.0130526 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 10
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000018 seconds.
+  path: Assets/Pandazole_Lowpoly_Asset_Bundle/Pandazole Nature Environment Pack/Prefabs/Flower_19.prefab
+  artifactKey: Guid(bfde5c3818b759b43951b1965a572ab4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Pandazole_Lowpoly_Asset_Bundle/Pandazole Nature Environment Pack/Prefabs/Flower_19.prefab using Guid(bfde5c3818b759b43951b1965a572ab4) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '2b36b8f86a14ff917cf4d77ac60a61e0') in 0.0140026 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 10
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000019 seconds.
+  path: Assets/Pandazole_Lowpoly_Asset_Bundle/Pandazole Nature Environment Pack/Prefabs/Cactus_06_A.prefab
+  artifactKey: Guid(3faf0edc560d87d4db9042577441dbab) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Pandazole_Lowpoly_Asset_Bundle/Pandazole Nature Environment Pack/Prefabs/Cactus_06_A.prefab using Guid(3faf0edc560d87d4db9042577441dbab) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '3adeb810fa114a73d671a1965668e3cc') in 0.0148696 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 10
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000022 seconds.
+  path: Assets/Pandazole_Lowpoly_Asset_Bundle/Pandazole Nature Environment Pack/Prefabs/Cactus_38_B.prefab
+  artifactKey: Guid(1f8a36cca81f09c4f9d21417ee541b0f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Pandazole_Lowpoly_Asset_Bundle/Pandazole Nature Environment Pack/Prefabs/Cactus_38_B.prefab using Guid(1f8a36cca81f09c4f9d21417ee541b0f) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '23fea9f670953ecd539cef72f3c85512') in 0.0150919 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 10
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000028 seconds.
+  path: Assets/Pandazole_Lowpoly_Asset_Bundle/Pandazole Nature Environment Pack/Prefabs/Flower_09.prefab
+  artifactKey: Guid(fc56669966493c943b78add6e62e6886) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Pandazole_Lowpoly_Asset_Bundle/Pandazole Nature Environment Pack/Prefabs/Flower_09.prefab using Guid(fc56669966493c943b78add6e62e6886) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'edacafab21a487ba0abe0797904248a4') in 0.0146045 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 10
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000018 seconds.
+  path: Assets/Pandazole_Lowpoly_Asset_Bundle/Pandazole Nature Environment Pack/Prefabs/Flower_12.prefab
+  artifactKey: Guid(6602f9df971711e4cb77d023526eac5f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Pandazole_Lowpoly_Asset_Bundle/Pandazole Nature Environment Pack/Prefabs/Flower_12.prefab using Guid(6602f9df971711e4cb77d023526eac5f) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '8427aa4159da7963c6b9eff63e851417') in 0.0162082 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 10
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000018 seconds.
+  path: Assets/Pandazole_Lowpoly_Asset_Bundle/Pandazole Nature Environment Pack/Models/CactusFlower_2.fbx
+  artifactKey: Guid(be014dd3f99f73047bd78842c6734b06) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Pandazole_Lowpoly_Asset_Bundle/Pandazole Nature Environment Pack/Models/CactusFlower_2.fbx using Guid(be014dd3f99f73047bd78842c6734b06) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '3ec0d3bd07bd4f9914a779b8e0266b59') in 0.017595 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 9
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000018 seconds.
+  path: Assets/Pandazole_Lowpoly_Asset_Bundle/Pandazole Nature Environment Pack/Prefabs/Foliage_03.prefab
+  artifactKey: Guid(a86b90e42f4ca7341a8518eb355fb075) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Pandazole_Lowpoly_Asset_Bundle/Pandazole Nature Environment Pack/Prefabs/Foliage_03.prefab using Guid(a86b90e42f4ca7341a8518eb355fb075) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'a15715862fefc4da03b4c7f5e8048a6c') in 0.015082 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 10
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000021 seconds.
+  path: Assets/Pandazole_Lowpoly_Asset_Bundle/Pandazole Nature Environment Pack/Models/Coral_19.fbx
+  artifactKey: Guid(b1bf3be446a93ab4b86adb1a170981b9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Pandazole_Lowpoly_Asset_Bundle/Pandazole Nature Environment Pack/Models/Coral_19.fbx using Guid(b1bf3be446a93ab4b86adb1a170981b9) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'ec4f8e949ec9c84de2ede40d92970bfb') in 0.0177523 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 9
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.900128 seconds.
+  path: Assets/Pandazole_Lowpoly_Asset_Bundle/Pandazole Nature Environment Pack/Prefabs/HardRock_45.prefab
+  artifactKey: Guid(9b8dd45c263f9894dab9de6d87d271c1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Pandazole_Lowpoly_Asset_Bundle/Pandazole Nature Environment Pack/Prefabs/HardRock_45.prefab using Guid(9b8dd45c263f9894dab9de6d87d271c1) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '1094097e9a8a29860f82867dc4714c0f') in 0.0167026 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 10
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000018 seconds.
+  path: Assets/Pandazole_Lowpoly_Asset_Bundle/Pandazole Nature Environment Pack/Prefabs/HardRock_55.prefab
+  artifactKey: Guid(5a4274ac14df09048ad054c5a66acbb2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Pandazole_Lowpoly_Asset_Bundle/Pandazole Nature Environment Pack/Prefabs/HardRock_55.prefab using Guid(5a4274ac14df09048ad054c5a66acbb2) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '58bf328763bce1de1f8d954e9ba6594f') in 0.0157496 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 10
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000021 seconds.
+  path: Assets/Pandazole_Lowpoly_Asset_Bundle/Pandazole Nature Environment Pack/Prefabs/Jem_05.prefab
+  artifactKey: Guid(a6d367aafa9b71c41a42e2234438c70d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Pandazole_Lowpoly_Asset_Bundle/Pandazole Nature Environment Pack/Prefabs/Jem_05.prefab using Guid(a6d367aafa9b71c41a42e2234438c70d) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '6d562a389bb3a8f3820f28f260a9176f') in 0.0146943 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 10
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000028 seconds.
+  path: Assets/Pandazole_Lowpoly_Asset_Bundle/Pandazole Nature Environment Pack/Prefabs/HardRock_53.prefab
+  artifactKey: Guid(38dbcd9e922bd914abee71b85b5c3c1a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Pandazole_Lowpoly_Asset_Bundle/Pandazole Nature Environment Pack/Prefabs/HardRock_53.prefab using Guid(38dbcd9e922bd914abee71b85b5c3c1a) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'a81fc0e12a7193e49eecab26da680d89') in 0.0142777 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 10
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000021 seconds.
+  path: Assets/Pandazole_Lowpoly_Asset_Bundle/Pandazole Nature Environment Pack/Prefabs/Jem_13.prefab
+  artifactKey: Guid(85b213274c5828e4c9f21300034b3946) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Pandazole_Lowpoly_Asset_Bundle/Pandazole Nature Environment Pack/Prefabs/Jem_13.prefab using Guid(85b213274c5828e4c9f21300034b3946) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '59535262b0bad62a323594355dee37da') in 0.0134613 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 10
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000018 seconds.
+  path: Assets/Pandazole_Lowpoly_Asset_Bundle/Pandazole Nature Environment Pack/Prefabs/Log_01.prefab
+  artifactKey: Guid(64aaa8c698778aa4798fa25e58dd80d1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Pandazole_Lowpoly_Asset_Bundle/Pandazole Nature Environment Pack/Prefabs/Log_01.prefab using Guid(64aaa8c698778aa4798fa25e58dd80d1) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '15d41115ea710e5e4d53b7eff785a0f5') in 0.0143587 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 10
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000019 seconds.
+  path: Assets/Pandazole_Lowpoly_Asset_Bundle/Pandazole Nature Environment Pack/Prefabs/Jem_32.prefab
+  artifactKey: Guid(1e9e9d5d8a38f1e498011e3221969437) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Pandazole_Lowpoly_Asset_Bundle/Pandazole Nature Environment Pack/Prefabs/Jem_32.prefab using Guid(1e9e9d5d8a38f1e498011e3221969437) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'c5f258df99f0c95a183c247dc94807b6') in 0.0159216 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 10
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000019 seconds.
+  path: Assets/Pandazole_Lowpoly_Asset_Bundle/Pandazole Nature Environment Pack/Prefabs/Jem_26.prefab
+  artifactKey: Guid(c3ebe81e1a2ddaa4184fc0cfbcf2d689) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Pandazole_Lowpoly_Asset_Bundle/Pandazole Nature Environment Pack/Prefabs/Jem_26.prefab using Guid(c3ebe81e1a2ddaa4184fc0cfbcf2d689) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '2633c4e3aaf321b553802e0103462c0f') in 0.014706 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 10
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000027 seconds.
+  path: Assets/Pandazole_Lowpoly_Asset_Bundle/Pandazole Nature Environment Pack/Prefabs/Jem_28.prefab
+  artifactKey: Guid(a05e108a1e322524abc7bb6eca589699) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Pandazole_Lowpoly_Asset_Bundle/Pandazole Nature Environment Pack/Prefabs/Jem_28.prefab using Guid(a05e108a1e322524abc7bb6eca589699) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '52feb6dd1ed122b3be05520fd5ad37a8') in 0.0141441 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 10
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000018 seconds.
+  path: Assets/Pandazole_Lowpoly_Asset_Bundle/Pandazole Nature Environment Pack/Prefabs/Jem_12.prefab
+  artifactKey: Guid(c5bdfddb22c2e9f46a56c6f0ef2bfb47) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Pandazole_Lowpoly_Asset_Bundle/Pandazole Nature Environment Pack/Prefabs/Jem_12.prefab using Guid(c5bdfddb22c2e9f46a56c6f0ef2bfb47) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '3058a747b637adf2cf6c9fc4582e5281') in 0.0137727 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 10
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000019 seconds.
+  path: Assets/Pandazole_Lowpoly_Asset_Bundle/Pandazole Nature Environment Pack/Prefabs/Jem_29.prefab
+  artifactKey: Guid(7e0d4cd972c017a4fb4c0870d2b36034) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Pandazole_Lowpoly_Asset_Bundle/Pandazole Nature Environment Pack/Prefabs/Jem_29.prefab using Guid(7e0d4cd972c017a4fb4c0870d2b36034) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '326abb15f71bca9dca81186b3a8e1d14') in 0.0166388 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 10
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000017 seconds.
+  path: Assets/Pandazole_Lowpoly_Asset_Bundle/Pandazole Nature Environment Pack/Prefabs/Mashroom_06.prefab
+  artifactKey: Guid(9568219ae2c91854ab14e84aed9496c7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Pandazole_Lowpoly_Asset_Bundle/Pandazole Nature Environment Pack/Prefabs/Mashroom_06.prefab using Guid(9568219ae2c91854ab14e84aed9496c7) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'a4bfe6d0d4c92ed704e1bf24e41491b6') in 0.0144995 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 10
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000020 seconds.
+  path: Assets/Pandazole_Lowpoly_Asset_Bundle/Pandazole Nature Environment Pack/Prefabs/Mashroom_14.prefab
+  artifactKey: Guid(62a4402ffbba3fd4a9c9cb5e27b2497e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Pandazole_Lowpoly_Asset_Bundle/Pandazole Nature Environment Pack/Prefabs/Mashroom_14.prefab using Guid(62a4402ffbba3fd4a9c9cb5e27b2497e) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'eafdcd4be49a9eafa9e58c48a295bfec') in 0.0149378 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 10
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000028 seconds.
+  path: Assets/Pandazole_Lowpoly_Asset_Bundle/Pandazole Nature Environment Pack/Prefabs/Mashroom_15.prefab
+  artifactKey: Guid(fd687a91c1157054783d49ac1a9393ff) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Pandazole_Lowpoly_Asset_Bundle/Pandazole Nature Environment Pack/Prefabs/Mashroom_15.prefab using Guid(fd687a91c1157054783d49ac1a9393ff) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '31f5930b17e21ffccf5203492b74d78c') in 0.0145506 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 10
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000019 seconds.
+  path: Assets/Pandazole_Lowpoly_Asset_Bundle/Pandazole Nature Environment Pack/Prefabs/Mashroom_13.prefab
+  artifactKey: Guid(15224fa48d4a7374eb34f8e81a030de2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Pandazole_Lowpoly_Asset_Bundle/Pandazole Nature Environment Pack/Prefabs/Mashroom_13.prefab using Guid(15224fa48d4a7374eb34f8e81a030de2) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '0059006b16b84eb846bdf05e7ea4d339') in 0.016209 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 10
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000018 seconds.
+  path: Assets/Pandazole_Lowpoly_Asset_Bundle/Pandazole Nature Environment Pack/Prefabs/Jem_39.prefab
+  artifactKey: Guid(1d8e11c6871d0c740b713ade0b929581) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Pandazole_Lowpoly_Asset_Bundle/Pandazole Nature Environment Pack/Prefabs/Jem_39.prefab using Guid(1d8e11c6871d0c740b713ade0b929581) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '00b84993223c5bfd13c68ed917b6ac26') in 0.0140421 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 10
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000020 seconds.
+  path: Assets/Pandazole_Lowpoly_Asset_Bundle/Pandazole Nature Environment Pack/Prefabs/Mashroom_03.prefab
+  artifactKey: Guid(4774d978a4455a04aac13c6c87260acc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Pandazole_Lowpoly_Asset_Bundle/Pandazole Nature Environment Pack/Prefabs/Mashroom_03.prefab using Guid(4774d978a4455a04aac13c6c87260acc) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'd8699041877e2384d2fc0b5d6f277db9') in 0.0155605 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 10
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000021 seconds.
+  path: Assets/Pandazole_Lowpoly_Asset_Bundle/Pandazole Nature Environment Pack/Prefabs/MineralNode_03_A.prefab
+  artifactKey: Guid(ccff610ded0a0b9408f90705a218c533) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Pandazole_Lowpoly_Asset_Bundle/Pandazole Nature Environment Pack/Prefabs/MineralNode_03_A.prefab using Guid(ccff610ded0a0b9408f90705a218c533) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '37e9415825f7d5dd82ec784c029afb32') in 0.0155975 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 10
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000028 seconds.
+  path: Assets/Pandazole_Lowpoly_Asset_Bundle/Pandazole Nature Environment Pack/Prefabs/Mashroom_23.prefab
+  artifactKey: Guid(c31165541964e274daf141252b43ff98) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Pandazole_Lowpoly_Asset_Bundle/Pandazole Nature Environment Pack/Prefabs/Mashroom_23.prefab using Guid(c31165541964e274daf141252b43ff98) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '01cfc29296742849750eb8f1106431a8') in 0.0157087 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 10
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000018 seconds.
+  path: Assets/Pandazole_Lowpoly_Asset_Bundle/Pandazole Nature Environment Pack/Prefabs/MineralNode_02_A.prefab
+  artifactKey: Guid(295274a998a06bc4a8e6b059c982c742) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Pandazole_Lowpoly_Asset_Bundle/Pandazole Nature Environment Pack/Prefabs/MineralNode_02_A.prefab using Guid(295274a998a06bc4a8e6b059c982c742) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '032a581beb000b38fe59b8eaccca04de') in 0.0152817 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 10
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000019 seconds.
+  path: Assets/Pandazole_Lowpoly_Asset_Bundle/Pandazole Nature Environment Pack/Prefabs/Mashroom_25.prefab
+  artifactKey: Guid(c59d1995936c3b846bd64a9487c8745a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Pandazole_Lowpoly_Asset_Bundle/Pandazole Nature Environment Pack/Prefabs/Mashroom_25.prefab using Guid(c59d1995936c3b846bd64a9487c8745a) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'cea65bc58ebd450ad402cf6261464996') in 0.0180395 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 10
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000018 seconds.
+  path: Assets/Pandazole_Lowpoly_Asset_Bundle/Pandazole Nature Environment Pack/Prefabs/Mashroom_05.prefab
+  artifactKey: Guid(6309edc2ff3dd4f42a7f509a45ae08e2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Pandazole_Lowpoly_Asset_Bundle/Pandazole Nature Environment Pack/Prefabs/Mashroom_05.prefab using Guid(6309edc2ff3dd4f42a7f509a45ae08e2) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '7814a53308b14df000734503772e4e92') in 0.0142208 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 10
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.787150 seconds.
+  path: Assets/Pandazole_Lowpoly_Asset_Bundle/Pandazole Nature Environment Pack/Prefabs/MineralNode_05_C.prefab
+  artifactKey: Guid(c696589a0df3b9e4994cc2751b80fe8d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Pandazole_Lowpoly_Asset_Bundle/Pandazole Nature Environment Pack/Prefabs/MineralNode_05_C.prefab using Guid(c696589a0df3b9e4994cc2751b80fe8d) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'cb99f1371d5ff521b35b40af95229252') in 0.0175494 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 10
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000021 seconds.
+  path: Assets/Pandazole_Lowpoly_Asset_Bundle/Pandazole Nature Environment Pack/Prefabs/MineralNode_07_B.prefab
+  artifactKey: Guid(615e28b34c442164b87fea2d1dbbdab3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Pandazole_Lowpoly_Asset_Bundle/Pandazole Nature Environment Pack/Prefabs/MineralNode_07_B.prefab using Guid(615e28b34c442164b87fea2d1dbbdab3) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'ede168eb957c0862474eaf9abb36e426') in 0.0162789 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 10
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000029 seconds.
+  path: Assets/Pandazole_Lowpoly_Asset_Bundle/Pandazole Nature Environment Pack/Prefabs/MineralNode_07_A.prefab
+  artifactKey: Guid(ecaadc5d608112140aa498e641967943) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Pandazole_Lowpoly_Asset_Bundle/Pandazole Nature Environment Pack/Prefabs/MineralNode_07_A.prefab using Guid(ecaadc5d608112140aa498e641967943) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '86179ecdd79425c68a1f535c0cfd0a86') in 0.0158047 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 10
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000019 seconds.
+  path: Assets/Pandazole_Lowpoly_Asset_Bundle/Pandazole Nature Environment Pack/Prefabs/MineralNode_08_C.prefab
+  artifactKey: Guid(4cfda1b73ec381c488f35dc4f63b82d5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Pandazole_Lowpoly_Asset_Bundle/Pandazole Nature Environment Pack/Prefabs/MineralNode_08_C.prefab using Guid(4cfda1b73ec381c488f35dc4f63b82d5) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'c859c1145a3821a6c1a4cafdbc17d981') in 0.0159319 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 10
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.117316 seconds.
+  path: Assets/Pandazole_Lowpoly_Asset_Bundle/Pandazole Nature Environment Pack/Prefabs/MineralNode_13_A.prefab
+  artifactKey: Guid(767ac6cbad6b9dd45b22bca07c16e696) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Pandazole_Lowpoly_Asset_Bundle/Pandazole Nature Environment Pack/Prefabs/MineralNode_13_A.prefab using Guid(767ac6cbad6b9dd45b22bca07c16e696) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'c36e35235c287e29e8fae031b2edd31e') in 0.015247 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 10
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000017 seconds.
+  path: Assets/Pandazole_Lowpoly_Asset_Bundle/Pandazole Nature Environment Pack/Prefabs/SoftRock_01.prefab
+  artifactKey: Guid(2e631824d371ffb48b7b57cdb171533e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Pandazole_Lowpoly_Asset_Bundle/Pandazole Nature Environment Pack/Prefabs/SoftRock_01.prefab using Guid(2e631824d371ffb48b7b57cdb171533e) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '3317469c7e3e3ced7a352baf7d7ff21e') in 0.0154177 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 10
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000020 seconds.
+  path: Assets/Pandazole_Lowpoly_Asset_Bundle/Pandazole Nature Environment Pack/Prefabs/SoftRock_17.prefab
+  artifactKey: Guid(e3db05f6866fd4248a2a2a5d9cb3f638) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Pandazole_Lowpoly_Asset_Bundle/Pandazole Nature Environment Pack/Prefabs/SoftRock_17.prefab using Guid(e3db05f6866fd4248a2a2a5d9cb3f638) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '51191093fbea70c3e5cef44b5548ca56') in 0.0160289 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 10
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000020 seconds.
+  path: Assets/Pandazole_Lowpoly_Asset_Bundle/Pandazole Nature Environment Pack/Prefabs/Skull_05.prefab
+  artifactKey: Guid(455595561c172334ea34e56e0eacde51) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Pandazole_Lowpoly_Asset_Bundle/Pandazole Nature Environment Pack/Prefabs/Skull_05.prefab using Guid(455595561c172334ea34e56e0eacde51) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'c8980e10df6396bd4aab91f3bcd00ce7') in 0.0157792 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 10
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000028 seconds.
+  path: Assets/Pandazole_Lowpoly_Asset_Bundle/Pandazole Nature Environment Pack/Prefabs/Thorns_03.prefab
+  artifactKey: Guid(bca306874361ff249be2b7908a216d0c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Pandazole_Lowpoly_Asset_Bundle/Pandazole Nature Environment Pack/Prefabs/Thorns_03.prefab using Guid(bca306874361ff249be2b7908a216d0c) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'ff3d419c8466050dffc396694716c735') in 0.0158829 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 10
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000020 seconds.
+  path: Assets/Pandazole_Lowpoly_Asset_Bundle/Pandazole Nature Environment Pack/Prefabs/Thorns_02.prefab
+  artifactKey: Guid(eb97697210965be4da34037e1549985f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Pandazole_Lowpoly_Asset_Bundle/Pandazole Nature Environment Pack/Prefabs/Thorns_02.prefab using Guid(eb97697210965be4da34037e1549985f) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '3358aa2fd21cd35f6e5514924e6d2e25') in 0.0159957 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 10
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000020 seconds.
+  path: Assets/Pandazole_Lowpoly_Asset_Bundle/Pandazole Nature Environment Pack/Prefabs/TileGround_16.prefab
+  artifactKey: Guid(9b14a15ae211fb44baedf764ee16f103) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Pandazole_Lowpoly_Asset_Bundle/Pandazole Nature Environment Pack/Prefabs/TileGround_16.prefab using Guid(9b14a15ae211fb44baedf764ee16f103) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'f064cd89160a4b0053c90f0dd5d4fc59') in 0.0156591 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 10
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000018 seconds.
+  path: Assets/Pandazole_Lowpoly_Asset_Bundle/Pandazole Nature Environment Pack/Prefabs/TileGround_02.prefab
+  artifactKey: Guid(e619ca4e858a00d4d8fd39639f05b762) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Pandazole_Lowpoly_Asset_Bundle/Pandazole Nature Environment Pack/Prefabs/TileGround_02.prefab using Guid(e619ca4e858a00d4d8fd39639f05b762) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '13af24bfb8cb8bc3e80bafdd7881d25e') in 0.0158917 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 10
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000023 seconds.
+  path: Assets/Pandazole_Lowpoly_Asset_Bundle/Pandazole Nature Environment Pack/Prefabs/SoftRock_09.prefab
+  artifactKey: Guid(31e5133e2df53ab47970453a7e782bc8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Pandazole_Lowpoly_Asset_Bundle/Pandazole Nature Environment Pack/Prefabs/SoftRock_09.prefab using Guid(31e5133e2df53ab47970453a7e782bc8) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'c97b67058f0dfd08be591238c78199b2') in 0.0137282 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 10
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000028 seconds.
+  path: Assets/Pandazole_Lowpoly_Asset_Bundle/Pandazole Nature Environment Pack/Prefabs/Thorns_12.prefab
+  artifactKey: Guid(51431958db7e9254186b1f425d90c9ff) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Pandazole_Lowpoly_Asset_Bundle/Pandazole Nature Environment Pack/Prefabs/Thorns_12.prefab using Guid(51431958db7e9254186b1f425d90c9ff) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'f2ce26db09b4e6c040f52c24cd651656') in 0.0146099 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 10
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000018 seconds.
+  path: Assets/Pandazole_Lowpoly_Asset_Bundle/Pandazole Nature Environment Pack/Prefabs/SoftRock_29.prefab
+  artifactKey: Guid(fe19396841b4f3f4a987409f4e9c7710) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Pandazole_Lowpoly_Asset_Bundle/Pandazole Nature Environment Pack/Prefabs/SoftRock_29.prefab using Guid(fe19396841b4f3f4a987409f4e9c7710) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'be0784acc719899519c6cda242007697') in 0.0161302 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 10
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000019 seconds.
+  path: Assets/Pandazole_Lowpoly_Asset_Bundle/Pandazole Nature Environment Pack/Prefabs/TileGround_03.prefab
+  artifactKey: Guid(441456d5431a9a4428702255dd4f8476) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Pandazole_Lowpoly_Asset_Bundle/Pandazole Nature Environment Pack/Prefabs/TileGround_03.prefab using Guid(441456d5431a9a4428702255dd4f8476) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '783d93ff6ea7cac234b3b1d50fba9d24') in 0.0156963 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 10
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000017 seconds.
+  path: Assets/Pandazole_Lowpoly_Asset_Bundle/Pandazole Nature Environment Pack/Prefabs/SoftRock_06.prefab
+  artifactKey: Guid(fc2f35db53cee0c49b40776262a3d689) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Pandazole_Lowpoly_Asset_Bundle/Pandazole Nature Environment Pack/Prefabs/SoftRock_06.prefab using Guid(fc2f35db53cee0c49b40776262a3d689) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '7257ece62ff1bd4311afcb131228d337') in 0.0135861 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 10
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000020 seconds.
+  path: Assets/Pandazole_Lowpoly_Asset_Bundle/Pandazole Nature Environment Pack/Prefabs/MineralNode_15_C.prefab
+  artifactKey: Guid(873230d633f0d374c919ee05766fb1e4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Pandazole_Lowpoly_Asset_Bundle/Pandazole Nature Environment Pack/Prefabs/MineralNode_15_C.prefab using Guid(873230d633f0d374c919ee05766fb1e4) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'c307c733abd931bb3ffc3d5fc29e297a') in 0.0152229 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 10
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000024 seconds.
+  path: Assets/Pandazole_Lowpoly_Asset_Bundle/Pandazole Nature Environment Pack/Prefabs/TileGround_44.prefab
+  artifactKey: Guid(a7672c759ddfa15479841db19aed0c0e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Pandazole_Lowpoly_Asset_Bundle/Pandazole Nature Environment Pack/Prefabs/TileGround_44.prefab using Guid(a7672c759ddfa15479841db19aed0c0e) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'b2f4c6c4f8ece919fbb16d59a29ae3e5') in 0.0133413 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 10
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000018 seconds.
+  path: Assets/Pandazole_Lowpoly_Asset_Bundle/Pandazole Nature Environment Pack/Prefabs/TileHex_20.prefab
+  artifactKey: Guid(4a79f44d0544fd2459a7fc309306de71) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Pandazole_Lowpoly_Asset_Bundle/Pandazole Nature Environment Pack/Prefabs/TileHex_20.prefab using Guid(4a79f44d0544fd2459a7fc309306de71) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '5751f32485955ec8724b5babd70f81be') in 0.0145394 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 10
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000020 seconds.
+  path: Assets/Pandazole_Lowpoly_Asset_Bundle/Pandazole Nature Environment Pack/Prefabs/TileGround_34.prefab
+  artifactKey: Guid(a2ef8c15ce3ef2c488a04ad6c8e1d879) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Pandazole_Lowpoly_Asset_Bundle/Pandazole Nature Environment Pack/Prefabs/TileGround_34.prefab using Guid(a2ef8c15ce3ef2c488a04ad6c8e1d879) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '9e566940c8cfa1fe41183b11bea2b923') in 0.0152197 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 10
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000019 seconds.
+  path: Assets/Pandazole_Lowpoly_Asset_Bundle/Pandazole Nature Environment Pack/Prefabs/TileHex_06.prefab
+  artifactKey: Guid(48f52f7dd6ce5ba4388c5d53f3794670) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Pandazole_Lowpoly_Asset_Bundle/Pandazole Nature Environment Pack/Prefabs/TileHex_06.prefab using Guid(48f52f7dd6ce5ba4388c5d53f3794670) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'e94ed80dbd286b6a510a1145cdd1ae70') in 0.0161286 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 10
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000022 seconds.
+  path: Assets/Pandazole_Lowpoly_Asset_Bundle/Pandazole Nature Environment Pack/Prefabs/TileGround_28.prefab
+  artifactKey: Guid(2a92ca261ab698c4eb6b2016241a522b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Pandazole_Lowpoly_Asset_Bundle/Pandazole Nature Environment Pack/Prefabs/TileGround_28.prefab using Guid(2a92ca261ab698c4eb6b2016241a522b) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '66cbf869e81ac44b9d9210a9feb40fcb') in 0.0167135 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 10
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000025 seconds.
+  path: Assets/Pandazole_Lowpoly_Asset_Bundle/Pandazole Nature Environment Pack/Prefabs/TileGround_45.prefab
+  artifactKey: Guid(b5481bbd39bf82743af17128ce25c141) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Pandazole_Lowpoly_Asset_Bundle/Pandazole Nature Environment Pack/Prefabs/TileGround_45.prefab using Guid(b5481bbd39bf82743af17128ce25c141) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '4c62d2d8dc0c26b7bd4651fb45023cc0') in 0.0130625 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 10
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000018 seconds.
+  path: Assets/Pandazole_Lowpoly_Asset_Bundle/Pandazole Nature Environment Pack/Prefabs/TileGround_29.prefab
+  artifactKey: Guid(197abe0a14e8e0f43b6f9ffeb2fa0590) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Pandazole_Lowpoly_Asset_Bundle/Pandazole Nature Environment Pack/Prefabs/TileGround_29.prefab using Guid(197abe0a14e8e0f43b6f9ffeb2fa0590) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'c29a3c0fea992d735c137f1b04ea15ad') in 0.0146119 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 10
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000019 seconds.
+  path: Assets/Pandazole_Lowpoly_Asset_Bundle/Pandazole Nature Environment Pack/Prefabs/TileHex_15.prefab
+  artifactKey: Guid(2cc84fed45a488e469bdfa833b28a36f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Pandazole_Lowpoly_Asset_Bundle/Pandazole Nature Environment Pack/Prefabs/TileHex_15.prefab using Guid(2cc84fed45a488e469bdfa833b28a36f) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '8b4862a9ce5a3a54f8a0338bf13bb1b9') in 0.0152932 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 10
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000019 seconds.
+  path: Assets/Pandazole_Lowpoly_Asset_Bundle/Pandazole Nature Environment Pack/Prefabs/TileHex_14.prefab
+  artifactKey: Guid(ee38d19763de1eb41b4e0fc8f0fd8a68) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Pandazole_Lowpoly_Asset_Bundle/Pandazole Nature Environment Pack/Prefabs/TileHex_14.prefab using Guid(ee38d19763de1eb41b4e0fc8f0fd8a68) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'f507d968b1053d3527bff90359d7ffc3') in 0.0147894 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 10
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000020 seconds.
+  path: Assets/Pandazole_Lowpoly_Asset_Bundle/Pandazole Nature Environment Pack/Prefabs/TileWater_06.prefab
+  artifactKey: Guid(363156b20070bdb4fa7ef3de0ff35821) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Pandazole_Lowpoly_Asset_Bundle/Pandazole Nature Environment Pack/Prefabs/TileWater_06.prefab using Guid(363156b20070bdb4fa7ef3de0ff35821) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'a436cfcedfca291aa79844f9524b3db4') in 0.0148431 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 10
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000023 seconds.
+  path: Assets/Pandazole_Lowpoly_Asset_Bundle/Pandazole Nature Environment Pack/Prefabs/TileHex_05.prefab
+  artifactKey: Guid(36de05f4c2d5e364dbbfee4ff02ab0af) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Pandazole_Lowpoly_Asset_Bundle/Pandazole Nature Environment Pack/Prefabs/TileHex_05.prefab using Guid(36de05f4c2d5e364dbbfee4ff02ab0af) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '936ef83e9f2f5b3fc5dc33be0a09dff4') in 0.0143258 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 10
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000017 seconds.
+  path: Assets/Pandazole_Lowpoly_Asset_Bundle/Pandazole Nature Environment Pack/Prefabs/TileGround_37.prefab
+  artifactKey: Guid(6033eb34d164c3541ba5d9e224af99f3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Pandazole_Lowpoly_Asset_Bundle/Pandazole Nature Environment Pack/Prefabs/TileGround_37.prefab using Guid(6033eb34d164c3541ba5d9e224af99f3) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '5878392e1fe4f7f4d1d454ce1964aed0') in 0.0141089 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 10
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000017 seconds.
+  path: Assets/Pandazole_Lowpoly_Asset_Bundle/Pandazole Nature Environment Pack/Prefabs/Thorns_13.prefab
+  artifactKey: Guid(182cd9eef74ff694e89733635590f5ee) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Pandazole_Lowpoly_Asset_Bundle/Pandazole Nature Environment Pack/Prefabs/Thorns_13.prefab using Guid(182cd9eef74ff694e89733635590f5ee) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'cf842ab2af5721d338e441e026d6d21d') in 0.0150834 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 10
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000018 seconds.
+  path: Assets/Pandazole_Lowpoly_Asset_Bundle/Pandazole Nature Environment Pack/Prefabs/TileGround_33.prefab
+  artifactKey: Guid(e2ab4e44b4b59da45a4045e3847f5af4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Pandazole_Lowpoly_Asset_Bundle/Pandazole Nature Environment Pack/Prefabs/TileGround_33.prefab using Guid(e2ab4e44b4b59da45a4045e3847f5af4) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '5edda261120dd5bf4d1ab21459e580e4') in 0.0151302 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 10
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000019 seconds.
+  path: Assets/Pandazole_Lowpoly_Asset_Bundle/Pandazole Nature Environment Pack/Prefabs/TileHex_10.prefab
+  artifactKey: Guid(402334169321b954ebf2d2acd2b5a71a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Pandazole_Lowpoly_Asset_Bundle/Pandazole Nature Environment Pack/Prefabs/TileHex_10.prefab using Guid(402334169321b954ebf2d2acd2b5a71a) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '6b19f466ed5e1c933a2b9e61097a9e9d') in 0.0132433 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 10
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000025 seconds.
+  path: Assets/Pandazole_Lowpoly_Asset_Bundle/Pandazole Nature Environment Pack/Prefabs/TileGround_14.prefab
+  artifactKey: Guid(648ab42aa8317a24a9e71574368087cc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Pandazole_Lowpoly_Asset_Bundle/Pandazole Nature Environment Pack/Prefabs/TileGround_14.prefab using Guid(648ab42aa8317a24a9e71574368087cc) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'df11e8ef68eba85ddbc3c09c67fe9149') in 0.0151724 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 10
+
+Editor requested this worker to shutdown with reason: Scaling down because of idle timeout
+AssetImportWorker is now disconnected from the server
+Process exiting
+Exiting without the bug reporter. Application will terminate with return code 0

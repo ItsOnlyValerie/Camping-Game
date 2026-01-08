@@ -488,6 +488,7 @@
 "Assets/Player Character/Scripts/PlayerController.cs"
 "Assets/Scripts/HelloWorldManager.cs"
 "Assets/Scripts/UIManager.cs"
+"Assets/Scripts/WoodCollectionMinigame.cs"
 "Assets/TutorialInfo/Scripts/Readme.cs"
 -langversion:9.0
 /deterministic
