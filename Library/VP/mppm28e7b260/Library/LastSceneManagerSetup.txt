@@ -1,5 +1,0 @@
-sceneSetups:
-- path: Assets/NGO_Minimal_Setup/NGO_Setup.unity
-  isLoaded: 1
-  isActive: 1
-  isSubScene: 0

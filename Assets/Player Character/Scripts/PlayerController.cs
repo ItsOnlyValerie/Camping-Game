@@ -21,6 +21,11 @@ public class PlayerController : NetworkBehaviour
     public float walkSpeed = 5;
     float tilt = 0;
 
+    // Movement variables (server-authoritative architecture)
+    private float serverForward;
+    private float serverSide;
+    private float serverTurn;
+
     /// Boolean to communicate with the UI Manager
     public static bool isAlive;
 
@@ -41,37 +46,47 @@ public class PlayerController : NetworkBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        Cursor.lockState = CursorLockMode.Confined; // Restrict the client's cursor to within the game window - CHANGE TO CENTER BEFORE SUBMISSION
-        //Cursor.visible = false; // Make the cursor invisible during gameplay - it will only be enabled when necessary, such as interacting with UI
+        // Restrict the client's cursor to within the game window - CHANGE TO CENTER BEFORE SUBMISSION
+        Cursor.lockState = CursorLockMode.Confined;
+        // Make the cursor invisible during gameplay - it will only be enabled when necessary, such as interacting with UI
+        //Cursor.visible = false;
 
-        animator = GetComponent<Animator>(); // Get the player animator
+        // Get the player animator
+        animator = GetComponent<Animator>();
 
-        rigidBody = GetComponent<Rigidbody>(); // Get the rigidbody
-        rigidBody.freezeRotation = true; // Prevent the player character from falling over
+        // Get the rigidbody
+        rigidBody = GetComponent<Rigidbody>();
+        // Prevent the player character from falling over
+        rigidBody.freezeRotation = true;
+
+        // Set the networkReady boolean
     }
 
      // Update is called once per frame
     void Update()
     {
-        if (IsOwner) // If the client is the owner of the player character, allow their inputs to control it - also sort out their animations and transmit data through the network
+        // If the client is the owner of the player character, allow their inputs to control it - also sort out their animations & movement and transmit data through the network
+        if (IsOwner)
         {
+            // Keyboard input
             float forward = Input.GetAxisRaw("Vertical");
             float side = Input.GetAxisRaw("Horizontal");
             float turn = Input.GetAxisRaw("Mouse X");
+
+            // Send the player input information to the server
+            RelayInputServerRpc(forward, side, turn);
+
+            // Mouse input (camera)
             float mouseY = -Input.GetAxisRaw("Mouse Y") * tiltSpeed * Time.deltaTime;
             float previousTilt = tilt;
             tilt += mouseY;
-            tilt = Mathf.Clamp(tilt, minTilt, maxTilt);
+            tilt = Mathf.Clamp(tilt, minTilt, maxTilt); // Clamp the tilt values so the camera cannot rotate infinitely
             float targetTilt = tilt - previousTilt;
+            fpcam.transform.Rotate(targetTilt, 0, 0); // Rotate the first person camera
 
-            //transform.Translate(new Vector3(0, 0, forward * walkSpeed * Time.deltaTime)));
-            //transform.Translate(new Vector3(side * walkSpeed * Time.deltaTime, 0, 0));
-            //transform.Rotate(new Vector3(0, turn * turnSpeed * Time.deltaTime, 0));
-            RelayInputServerRpc(forward * walkSpeed * Time.deltaTime, side * walkSpeed * Time.deltaTime, turn * turnSpeed * Time.deltaTime); // send movement to server
+            // Animation
             float animSpeed = new Vector2(forward, side).magnitude; // variable to set animation speed parameter based on forward & side input
             animator.SetFloat("Speed", animSpeed, 0.1f, Time.deltaTime); // set local animation
-            RelayAnimServerRpc(animSpeed); // set server animation
-            fpcam.transform.Rotate(targetTilt, 0, 0); // rotate the first person camera
         }
         else
         {
@@ -79,30 +94,36 @@ public class PlayerController : NetworkBehaviour
         }
     }
 
-    // Server RPC for movement
+    // Server-authoritative movement
+    void FixedUpdate()
+    {
+        // Only the server should be handling this
+        if (!IsServer) return;
+
+        Vector3 move = transform.forward * serverForward + transform.right * serverSide;
+
+        // Handle the rigidbody's movement
+        rigidBody.MovePosition(rigidBody.position + move * walkSpeed * Time.fixedDeltaTime);
+
+        // Handle the rigidbody's rotation
+        rigidBody.MoveRotation(rigidBody.rotation * Quaternion.Euler(0, serverTurn * turnSpeed * Time.fixedDeltaTime, 0));
+
+        // Update the server animation state
+        netAnimSpeed.Value = new Vector2(serverForward, serverSide).magnitude;
+    }
+
+    // Server RPC for input
     [ServerRpc]
     void RelayInputServerRpc(float forward, float side, float turn)
     {
-        //transform.Translate(new Vector3(0, 0, forward));
-        //transform.Translate(new Vector3(side, 0, 0));
-        //transform.Rotate(new Vector3(0, turn));
-
-        Vector3 move = transform.forward * forward + transform.right * side;
-        rigidBody.MovePosition(rigidBody.position + move); // Physics-based movement
-        rigidBody.MoveRotation(rigidBody.rotation * Quaternion.Euler(0, turn, 0)); // Physics-based rotation
-    }
-
-    // Server RPC for animations
-    [ServerRpc]
-    void RelayAnimServerRpc(float speed)
-    {
-        animator.SetFloat("Speed", speed, 0.1f, Time.deltaTime);
-        netAnimSpeed.Value = speed;
+        serverForward = forward;
+        serverSide = side;
+        serverTurn = turn;
     }
 
     public override void OnNetworkSpawn()
     {
-        isAlive = true;
+        isAlive = true; // The player is connected to, and present in, a session
         fpcam = GetComponentInChildren<Camera>();
 
         // If the player is in a session, disable the create & join interface and enable the leave & code interface
