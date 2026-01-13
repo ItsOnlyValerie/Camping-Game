@@ -1838,7 +1838,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &596162447
 RectTransform:
   m_ObjectHideFlags: 0
@@ -2019,7 +2019,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1167050261}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: HelloWorldManager, Assembly-CSharp
         m_MethodName: Shutdown
         m_Mode: 1
@@ -3074,7 +3074,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 813407617}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1167050262}
+        m_TargetAssemblyTypeName: SessionManager, Assembly-CSharp
+        m_MethodName: Join
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &813407617
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4441,10 +4453,10 @@ RectTransform:
   - {fileID: 651759496}
   m_Father: {fileID: 1440552808}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 0, y: 30}
+  m_AnchorMin: {x: 0, y: 1}
+  m_AnchorMax: {x: 0, y: 1}
+  m_AnchoredPosition: {x: 77.502495, y: -15}
+  m_SizeDelta: {x: 155.00499, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1088176278
 MonoBehaviour:
@@ -4668,7 +4680,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1167050261}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: HelloWorldManager, Assembly-CSharp
         m_MethodName: StartHost
         m_Mode: 1
@@ -4808,7 +4820,7 @@ GameObject:
   - component: {fileID: 1167050260}
   - component: {fileID: 1167050259}
   - component: {fileID: 1167050258}
-  - component: {fileID: 1167050261}
+  - component: {fileID: 1167050262}
   m_Layer: 0
   m_Name: NetworkManager
   m_TagString: Untagged
@@ -4880,7 +4892,7 @@ MonoBehaviour:
     LoadSceneTimeOut: 120
     SpawnTimeout: 10
     EnableNetworkLogs: 1
-    NetworkTopology: 0
+    NetworkTopology: 1
     UseCMBService: 0
     AutoSpawnPlayerPrefabClientSide: 1
     NetworkMessageMetrics: 1
@@ -4903,7 +4915,7 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1167050261
+--- !u!114 &1167050262
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -4912,9 +4924,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 1167050257}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 435462feb7c4ec14e880e413610e8660, type: 3}
+  m_Script: {fileID: 11500000, guid: d5780c018503b9f47bbed2ededcfacb0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  m_MaxPlayers: 4
+  sessionName: Session1
 --- !u!1 &1196843801
 GameObject:
   m_ObjectHideFlags: 0
@@ -5166,7 +5180,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1292032543}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1167050262}
+        m_TargetAssemblyTypeName: SessionManager, Assembly-CSharp
+        m_MethodName: Leave
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1292032543
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5602,7 +5628,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1440552808
 RectTransform:
   m_ObjectHideFlags: 0
@@ -5738,10 +5764,10 @@ RectTransform:
   - {fileID: 1002805102}
   m_Father: {fileID: 1440552808}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 0, y: 30}
+  m_AnchorMin: {x: 0, y: 1}
+  m_AnchorMax: {x: 0, y: 1}
+  m_AnchoredPosition: {x: 227.50249, y: -15}
+  m_SizeDelta: {x: 144.995, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1671473250
 MonoBehaviour:
@@ -5989,7 +6015,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1167050261}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: HelloWorldManager, Assembly-CSharp
         m_MethodName: StartClient
         m_Mode: 1
@@ -6485,7 +6511,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1167050261}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: HelloWorldManager, Assembly-CSharp
         m_MethodName: StartServer
         m_Mode: 1

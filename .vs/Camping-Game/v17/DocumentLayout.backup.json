@@ -3,16 +3,8 @@
   "WorkspaceRootPath": "C:\\Users\\Michael\\Unity\\Camping-Game\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{BB1E72F0-5D2C-DB75-5D69-CE88F371C622}|Assembly-CSharp.csproj|c:\\users\\michael\\unity\\camping-game\\assets\\scripts\\woodpickuphandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{BB1E72F0-5D2C-DB75-5D69-CE88F371C622}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\woodpickuphandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{BB1E72F0-5D2C-DB75-5D69-CE88F371C622}|Assembly-CSharp.csproj|C:\\Users\\Michael\\Unity\\Camping-Game\\assets\\player character\\scripts\\playercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{BB1E72F0-5D2C-DB75-5D69-CE88F371C622}|Assembly-CSharp.csproj|solutionrelative:assets\\player character\\scripts\\playercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{BB1E72F0-5D2C-DB75-5D69-CE88F371C622}|Assembly-CSharp.csproj|C:\\Users\\Michael\\Unity\\Camping-Game\\assets\\scripts\\uimanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{BB1E72F0-5D2C-DB75-5D69-CE88F371C622}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\uimanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{BB1E72F0-5D2C-DB75-5D69-CE88F371C622}|Assembly-CSharp.csproj|c:\\users\\michael\\unity\\camping-game\\assets\\scripts\\sessionmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BB1E72F0-5D2C-DB75-5D69-CE88F371C622}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\sessionmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -27,39 +19,15 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "WoodPickupHandler.cs",
-              "DocumentMoniker": "C:\\Users\\Michael\\Unity\\Camping-Game\\Assets\\Scripts\\WoodPickupHandler.cs",
-              "RelativeDocumentMoniker": "Assets\\Scripts\\WoodPickupHandler.cs",
-              "ToolTip": "C:\\Users\\Michael\\Unity\\Camping-Game\\Assets\\Scripts\\WoodPickupHandler.cs",
-              "RelativeToolTip": "Assets\\Scripts\\WoodPickupHandler.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAQAAAAAAAAAA==",
+              "Title": "SessionManager.cs",
+              "DocumentMoniker": "C:\\Users\\Michael\\Unity\\Camping-Game\\Assets\\Scripts\\SessionManager.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\SessionManager.cs",
+              "ToolTip": "C:\\Users\\Michael\\Unity\\Camping-Game\\Assets\\Scripts\\SessionManager.cs",
+              "RelativeToolTip": "Assets\\Scripts\\SessionManager.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAADEAAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-01-09T15:21:15.328Z",
+              "WhenOpened": "2026-01-13T14:29:09.042Z",
               "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "UIManager.cs",
-              "DocumentMoniker": "C:\\Users\\Michael\\Unity\\Camping-Game\\Assets\\Scripts\\UIManager.cs",
-              "RelativeDocumentMoniker": "Assets\\Scripts\\UIManager.cs",
-              "ToolTip": "C:\\Users\\Michael\\Unity\\Camping-Game\\Assets\\Scripts\\UIManager.cs",
-              "RelativeToolTip": "Assets\\Scripts\\UIManager.cs",
-              "ViewState": "AgIAABQAAAAAAAAAAAAQwB8AAAAyAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-01-07T17:58:14.725Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "PlayerController.cs",
-              "DocumentMoniker": "C:\\Users\\Michael\\Unity\\Camping-Game\\Assets\\Player Character\\Scripts\\PlayerController.cs",
-              "RelativeDocumentMoniker": "Assets\\Player Character\\Scripts\\PlayerController.cs",
-              "ToolTip": "C:\\Users\\Michael\\Unity\\Camping-Game\\Assets\\Player Character\\Scripts\\PlayerController.cs",
-              "RelativeToolTip": "Assets\\Player Character\\Scripts\\PlayerController.cs",
-              "ViewState": "AgIAAD0AAAAAAAAAAAAhwHwAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-01-07T17:58:12.054Z"
             }
           ]
         }
