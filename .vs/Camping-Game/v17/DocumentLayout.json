@@ -1,14 +1,22 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\Michael\\Unity\\Camping-Game\\",
+  "WorkspaceRootPath": "C:\\Users\\K2333202\\Unity\\Camping-Game\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Michael\\Unity\\Camping-Game\\Library\\PackageCache\\com.unity.netcode.gameobjects@bd2a018756ed\\Runtime\\Core\\NetworkManager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Library\\PackageCache\\com.unity.netcode.gameobjects@bd2a018756ed\\Runtime\\Core\\NetworkManager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{BB1E72F0-5D2C-DB75-5D69-CE88F371C622}|Assembly-CSharp.csproj|C:\\Users\\K2333202\\Unity\\Camping-Game\\assets\\scripts\\sessionmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BB1E72F0-5D2C-DB75-5D69-CE88F371C622}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\sessionmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{BB1E72F0-5D2C-DB75-5D69-CE88F371C622}|Assembly-CSharp.csproj|c:\\users\\michael\\unity\\camping-game\\assets\\scripts\\sessionmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{BB1E72F0-5D2C-DB75-5D69-CE88F371C622}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\sessionmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{BB1E72F0-5D2C-DB75-5D69-CE88F371C622}|Assembly-CSharp.csproj|C:\\Users\\K2333202\\Unity\\Camping-Game\\assets\\scripts\\woodminigamehandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BB1E72F0-5D2C-DB75-5D69-CE88F371C622}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\woodminigamehandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BB1E72F0-5D2C-DB75-5D69-CE88F371C622}|Assembly-CSharp.csproj|c:\\users\\k2333202\\unity\\camping-game\\assets\\scripts\\uimanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BB1E72F0-5D2C-DB75-5D69-CE88F371C622}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\uimanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BB1E72F0-5D2C-DB75-5D69-CE88F371C622}|Assembly-CSharp.csproj|C:\\Users\\K2333202\\Unity\\Camping-Game\\assets\\player character\\scripts\\playercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BB1E72F0-5D2C-DB75-5D69-CE88F371C622}|Assembly-CSharp.csproj|solutionrelative:assets\\player character\\scripts\\playercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -18,32 +26,58 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 1,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "NetworkManager.cs",
-              "DocumentMoniker": "C:\\Users\\Michael\\Unity\\Camping-Game\\Library\\PackageCache\\com.unity.netcode.gameobjects@bd2a018756ed\\Runtime\\Core\\NetworkManager.cs",
-              "RelativeDocumentMoniker": "Library\\PackageCache\\com.unity.netcode.gameobjects@bd2a018756ed\\Runtime\\Core\\NetworkManager.cs",
-              "ToolTip": "C:\\Users\\Michael\\Unity\\Camping-Game\\Library\\PackageCache\\com.unity.netcode.gameobjects@bd2a018756ed\\Runtime\\Core\\NetworkManager.cs",
-              "RelativeToolTip": "Library\\PackageCache\\com.unity.netcode.gameobjects@bd2a018756ed\\Runtime\\Core\\NetworkManager.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAACkAAAA6AAAAAAAAAA==",
+              "DocumentIndex": 2,
+              "Title": "UIManager.cs",
+              "DocumentMoniker": "C:\\Users\\K2333202\\Unity\\Camping-Game\\Assets\\Scripts\\UIManager.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\UIManager.cs",
+              "ToolTip": "C:\\Users\\K2333202\\Unity\\Camping-Game\\Assets\\Scripts\\UIManager.cs",
+              "RelativeToolTip": "Assets\\Scripts\\UIManager.cs",
+              "ViewState": "AgIAAAIAAAAAAAAAAAAxwAoAAAA1AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-01-13T14:49:46.531Z",
+              "WhenOpened": "2026-01-15T15:50:13.162Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "SessionManager.cs",
+              "DocumentMoniker": "C:\\Users\\K2333202\\Unity\\Camping-Game\\Assets\\Scripts\\SessionManager.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\SessionManager.cs",
+              "ToolTip": "C:\\Users\\K2333202\\Unity\\Camping-Game\\Assets\\Scripts\\SessionManager.cs",
+              "RelativeToolTip": "Assets\\Scripts\\SessionManager.cs",
+              "ViewState": "AgIAABgAAAAAAAAAAAAowBgAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-13T14:29:09.042Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "SessionManager.cs",
-              "DocumentMoniker": "C:\\Users\\Michael\\Unity\\Camping-Game\\Assets\\Scripts\\SessionManager.cs",
-              "RelativeDocumentMoniker": "Assets\\Scripts\\SessionManager.cs",
-              "ToolTip": "C:\\Users\\Michael\\Unity\\Camping-Game\\Assets\\Scripts\\SessionManager.cs",
-              "RelativeToolTip": "Assets\\Scripts\\SessionManager.cs",
-              "ViewState": "AgIAAAsAAAAAAAAAAAAQwCQAAAAnAAAAAAAAAA==",
+              "Title": "WoodMinigameHandler.cs",
+              "DocumentMoniker": "C:\\Users\\K2333202\\Unity\\Camping-Game\\Assets\\Scripts\\WoodMinigameHandler.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\WoodMinigameHandler.cs",
+              "ToolTip": "C:\\Users\\K2333202\\Unity\\Camping-Game\\Assets\\Scripts\\WoodMinigameHandler.cs",
+              "RelativeToolTip": "Assets\\Scripts\\WoodMinigameHandler.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAB4AAAAaAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-01-13T14:29:09.042Z",
+              "WhenOpened": "2026-01-15T14:42:35.143Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "PlayerController.cs",
+              "DocumentMoniker": "C:\\Users\\K2333202\\Unity\\Camping-Game\\Assets\\Player Character\\Scripts\\PlayerController.cs",
+              "RelativeDocumentMoniker": "Assets\\Player Character\\Scripts\\PlayerController.cs",
+              "ToolTip": "C:\\Users\\K2333202\\Unity\\Camping-Game\\Assets\\Player Character\\Scripts\\PlayerController.cs",
+              "RelativeToolTip": "Assets\\Player Character\\Scripts\\PlayerController.cs",
+              "ViewState": "AgIAAEAAAAAAAAAAAAAgwEIAAAARAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-15T14:40:09.988Z",
               "EditorCaption": ""
             }
           ]

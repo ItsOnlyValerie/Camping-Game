@@ -66,8 +66,6 @@ public class PlayerController : NetworkBehaviour
      // Update is called once per frame
     void Update()
     {
-        // If the NetworkManager is not ready, do not run
-       // if (!networkReady) return;
         // If the client is the owner of the player character, allow their inputs to control it - also sort out their animations & movement and transmit data through the network
         if (IsOwner)
         {
@@ -79,10 +77,6 @@ public class PlayerController : NetworkBehaviour
             mouseX = Input.GetAxisRaw("Mouse X") * turnSpeed * Time.deltaTime;
             mouseY = -Input.GetAxisRaw("Mouse Y") * tiltSpeed * Time.deltaTime;
             float previousTilt = tilt;
-            // tilt += mouseY;
-            //tilt = Mathf.Clamp(tilt, minTilt, maxTilt); // Clamp the tilt values so the camera cannot rotate infinitely
-            //float targetTilt = tilt - previousTilt;
-            //fpcam.transform.Rotate(targetTilt, 0, 0); // Rotate the first person camera
 
             // Rotate the player
             transform.Rotate(Vector3.up * mouseX);
@@ -93,9 +87,9 @@ public class PlayerController : NetworkBehaviour
             fpcam.transform.localRotation = Quaternion.Euler(tilt, 0f, 0f);
 
             // Animation
-            float animSpeed = new Vector2(forward, side).magnitude;
-            animator.SetFloat("Speed", animSpeed, 0.1f, Time.deltaTime);
-            netAnimSpeed.Value = animSpeed;
+            //float animSpeed = new Vector2(forward, side).magnitude;
+            //animator.SetFloat("Speed", animSpeed, 0.1f, Time.deltaTime);
+            //netAnimSpeed.Value = animSpeed;
         }
         else
         {
