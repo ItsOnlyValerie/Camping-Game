@@ -35,12 +35,12 @@ public class WoodPickupHandler : NetworkBehaviour
     {
         if (!IsServer) return; // Only the server should be handling this - not the client
 
-        if (other.TryGetComponent<PlayerController>(out var player)) // Try to find the PlayerController component on the target object and output it to a new variable called "player". If it exists, it's a player; execute the functionality
-        {
-            NetworkObject.Despawn(); // Despawn the object for everyone on the network
-            spawnTimer -= Time.deltaTime; // Count down the timer
-            if (spawnTimer <= 0) NetworkObject.Spawn(); // Respawn the object for everyone on the network
-            spawnTimer = 10.0f; // Reset the timer
-        }
+        //if (other.TryGetComponent<PlayerController>(out var player)) // Try to find the PlayerController component on the target object and output it to a new variable called "player". If it exists, it's a player; execute the functionality
+        //{
+        //    NetworkObject.Despawn(); // Despawn the object for everyone on the network
+        //    spawnTimer -= Time.deltaTime; // Count down the timer
+        //    if (spawnTimer <= 0) NetworkObject.Spawn(); // Respawn the object for everyone on the network
+        //    spawnTimer = 10.0f; // Reset the timer
+        //}
     }
 }
