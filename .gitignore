@@ -73,3 +73,8 @@ crashlytics-build.properties
 # Temporary auto-generated Android Assets
 /[Aa]ssets/[Ss]treamingAssets/aa.meta
 /[Aa]ssets/[Ss]treamingAssets/aa/*
+
+# Unity User Options
+.vs/Camping-Game/v17/.suo
+.vs/Camping-Game/v17/DocumentLayout.json
+.vs/Camping-Game/v17/DocumentLayout.backup.json

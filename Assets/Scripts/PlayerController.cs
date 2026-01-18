@@ -6,9 +6,17 @@ using Unity.Netcode;
 using Unity.Multiplayer.Center.NetcodeForGameObjectsExample.DistributedAuthority;
 using Unity.Netcode.Components;
 using UnityEngine.UIElements;
+using UnityEngine.InputSystem;
 
 public class PlayerController : NetworkBehaviour
 {
+    [SerializeField] private Transform cameraTransform;
+    [SerializeField] private float speed = 5f;
+    [SerializeField] private bool shouldFaceMoveDirection = false;
+
+    private CharacterController controller;
+    private Vector3 moveInput;
+    private Vector3 velocity;
 
     // Reference the player animator
     Animator animator;
@@ -62,21 +70,52 @@ public class PlayerController : NetworkBehaviour
         // Prevent the player character from falling over
         rigidBody.freezeRotation = true;
     }
-
-     // Update is called once per frame
+    public void OnMove(InputAction.CallbackContext context)
+    {
+        moveInput = context.ReadValue<Vector2>();
+        Debug.Log($"Move Input: {moveInput}");
+    }
+    // Update is called once per frame
     void Update()
     {
+        Vector3 forward = cameraTransform.forward;
+        Vector3 right = cameraTransform.right;
+
+        forward.y = 0;
+        right.y = 0;
+
+        forward.Normalize();
+        right.Normalize();
+
+        Vector3 moveDirection = forward * moveInput.y + right * moveInput.x;
+        controller.Move(moveDirection * speed * Time.deltaTime);
+
+        if (shouldFaceMoveDirection && moveDirection.sqrMagnitude > 0.001f)
+        {
+            Quaternion toRotation = Quaternion.LookRotation(moveDirection, Vector3.up);
+            transform.rotation = Quaternion.Slerp(transform.rotation, toRotation, 10f * Time.deltaTime);
+        }
+
+        // If the NetworkManager is not ready, do not run
+        // if (!networkReady) return;
         // If the client is the owner of the player character, allow their inputs to control it - also sort out their animations & movement and transmit data through the network
         if (IsOwner)
         {
+            Vector3 move = new Vector3(moveInput.x, 0, moveInput.y);
+            controller.Move(move * speed * Time.deltaTime);
+
             // Keyboard input
-            forward = Input.GetAxisRaw("Vertical");
-            side = Input.GetAxisRaw("Horizontal");
+            //forward = Input.GetAxisRaw("Vertical");
+            //side = Input.GetAxisRaw("Horizontal");
 
             // Mouse input (camera)
             mouseX = Input.GetAxisRaw("Mouse X") * turnSpeed * Time.deltaTime;
             mouseY = -Input.GetAxisRaw("Mouse Y") * tiltSpeed * Time.deltaTime;
             float previousTilt = tilt;
+            // tilt += mouseY;
+            //tilt = Mathf.Clamp(tilt, minTilt, maxTilt); // Clamp the tilt values so the camera cannot rotate infinitely
+            //float targetTilt = tilt - previousTilt;
+            //fpcam.transform.Rotate(targetTilt, 0, 0); // Rotate the first person camera
 
             // Rotate the player
             transform.Rotate(Vector3.up * mouseX);
