@@ -3,12 +3,8 @@
   "WorkspaceRootPath": "C:\\Users\\Admin\\Documents\\GitHub\\Camping-Game\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{BB1E72F0-5D2C-DB75-5D69-CE88F371C622}|Assembly-CSharp.csproj|c:\\users\\admin\\documents\\github\\camping-game\\assets\\scripts\\thirdpersoncameracontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{BB1E72F0-5D2C-DB75-5D69-CE88F371C622}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\thirdpersoncameracontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{BB1E72F0-5D2C-DB75-5D69-CE88F371C622}|Assembly-CSharp.csproj|C:\\Users\\Admin\\Documents\\GitHub\\Camping-Game\\assets\\scripts\\playercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{BB1E72F0-5D2C-DB75-5D69-CE88F371C622}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\playercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{BB1E72F0-5D2C-DB75-5D69-CE88F371C622}|Assembly-CSharp.csproj|c:\\users\\admin\\documents\\github\\camping-game\\assets\\scripts\\mainmenu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BB1E72F0-5D2C-DB75-5D69-CE88F371C622}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\mainmenu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -18,31 +14,19 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 0,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "PlayerController.cs",
-              "DocumentMoniker": "C:\\Users\\Admin\\Documents\\GitHub\\Camping-Game\\Assets\\Scripts\\PlayerController.cs",
-              "RelativeDocumentMoniker": "Assets\\Scripts\\PlayerController.cs",
-              "ToolTip": "C:\\Users\\Admin\\Documents\\GitHub\\Camping-Game\\Assets\\Scripts\\PlayerController.cs",
-              "RelativeToolTip": "Assets\\Scripts\\PlayerController.cs",
-              "ViewState": "AgIAAEAAAAAAAAAAAAAgwIIAAAAOAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-01-14T23:56:55.622Z"
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "ThirdPersonCameraController.cs",
-              "DocumentMoniker": "C:\\Users\\Admin\\Documents\\GitHub\\Camping-Game\\Assets\\Scripts\\ThirdPersonCameraController.cs",
-              "RelativeDocumentMoniker": "Assets\\Scripts\\ThirdPersonCameraController.cs",
-              "ToolTip": "C:\\Users\\Admin\\Documents\\GitHub\\Camping-Game\\Assets\\Scripts\\ThirdPersonCameraController.cs",
-              "RelativeToolTip": "Assets\\Scripts\\ThirdPersonCameraController.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABwAAAAKAAAAAAAAAA==",
+              "Title": "MainMenu.cs",
+              "DocumentMoniker": "C:\\Users\\Admin\\Documents\\GitHub\\Camping-Game\\Assets\\Scripts\\MainMenu.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\MainMenu.cs",
+              "ToolTip": "C:\\Users\\Admin\\Documents\\GitHub\\Camping-Game\\Assets\\Scripts\\MainMenu.cs",
+              "RelativeToolTip": "Assets\\Scripts\\MainMenu.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAdAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-01-14T23:06:07.191Z",
+              "WhenOpened": "2026-01-18T05:03:10.15Z",
               "EditorCaption": ""
             }
           ]
