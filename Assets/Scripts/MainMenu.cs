@@ -7,4 +7,9 @@ public class MainMenu : MonoBehaviour
     {
         SceneManager.LoadSceneAsync("Create Session");
     }
+
+    public void QuitGame()
+    {
+        Application.Quit();
+    }
 }
