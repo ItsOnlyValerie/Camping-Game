@@ -33,11 +33,11 @@ public class UIManager : MonoBehaviour
         //leaveSession.gameObject.SetActive(false);
 
         // Set up the UI once on start (main menu)
-        createSession.gameObject.SetActive(true);
-        joinSession.gameObject.SetActive(true);
-        leaveSession.gameObject.SetActive(false);
-        sessionCode.gameObject.SetActive(false);
-        playerName.gameObject.SetActive(true);
+       // createSession.gameObject.SetActive(true);
+        //joinSession.gameObject.SetActive(true);
+        //leaveSession.gameObject.SetActive(false);
+        //sessionCode.gameObject.SetActive(false);
+        //playerName.gameObject.SetActive(true);
     }
 
     // Update is called once per frame
@@ -62,19 +62,19 @@ public class UIManager : MonoBehaviour
 
     public void SessionJoinUpdateUI() // Update the UI to show/hide certain elements when connected to a session
     {
-        createSession.gameObject.SetActive(false);
-        joinSession.gameObject.SetActive(false);
-        sessionCode.gameObject.SetActive(true);
-        leaveSession.gameObject.SetActive(true);
-        playerName.gameObject.SetActive(false);
+        //createSession.gameObject.SetActive(false);
+        //joinSession.gameObject.SetActive(false);
+        //sessionCode.gameObject.SetActive(true);
+        //leaveSession.gameObject.SetActive(true);
+        //playerName.gameObject.SetActive(false);
     }
 
     public void SessionLeaveUpdateUI() // Update the UI to show/hide certain elements when not connected to a session (main menu)
     {
-        createSession.gameObject.SetActive(true);
-        joinSession.gameObject.SetActive(true);
-        sessionCode.gameObject.SetActive(false);
-        leaveSession.gameObject.SetActive(false);
-        playerName.gameObject.SetActive(true);
+        //createSession.gameObject.SetActive(true);
+        //joinSession.gameObject.SetActive(true);
+        //sessionCode.gameObject.SetActive(false);
+        //leaveSession.gameObject.SetActive(false);
+        //playerName.gameObject.SetActive(true);
     }
 }
