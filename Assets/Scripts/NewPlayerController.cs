@@ -34,9 +34,6 @@ public class NewPlayerController : NetworkBehaviour
     {
         // Reference the player controls
         playerControls = new PlayerControls();
-
-        // Reference the character controller
-        //characterController = GetComponent<CharacterController>();
     }
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
@@ -83,7 +80,7 @@ public class NewPlayerController : NetworkBehaviour
         playerInput = new Vector3(input.x, 0, input.y);
     }
 
-    // Function to handle the player's direction
+    // Function to handle the player's direction & movement
     private void Movement()
     {
         // Only run this if the client owns the player character
@@ -110,7 +107,6 @@ public class NewPlayerController : NetworkBehaviour
         if (!characterController) return;
 
         // Set up movement
-        //Vector3 moveDirection = new Vector3(playerInput.x, 0f, playerInput.z);
         Vector3 moveDirection = camForward * playerInput.z + camRight * playerInput.x;
 
         // Normalize the movement speed to make it consistent
@@ -141,27 +137,6 @@ public class NewPlayerController : NetworkBehaviour
         }
     }
 
-    // Function to move the player
-    private void Move()
-    {
-        // If the character controller component is null OR the player is not making any input, return
-        if (!characterController) return;
-        if (playerInput == Vector3.zero) return;
-
-        // Set up movement
-        Vector3 moveDirection = new Vector3(playerInput.x, 0f, playerInput.z);
-
-        // Normalize the movement speed to make it consistent
-        moveDirection.Normalize();
-
-        // Finalise movement vectors
-        Vector3 move = moveDirection * moveSpeed;
-        Vector3 finalMove = move * Time.deltaTime + verticalVelocity * Time.deltaTime;
-
-        // Move the player in the desired direction
-        characterController.Move(finalMove);
-    }
-
     public override void OnNetworkSpawn()
     {
         tpCamera = GetComponentInChildren<CinemachineCamera>();
@@ -169,14 +144,21 @@ public class NewPlayerController : NetworkBehaviour
         // If the client is the owner of the player character and the third person camera exists, disable the main camera and enable the third person camera
         if (IsOwner && tpCamera != null)
         {
-            mainCamera = Camera.main;
-            mainCamera.enabled = false;
+        //    mainCamera = Camera.main;
+        //    mainCamera.enabled = false;
             tpCamera.enabled = true;
         }
-        else // Disable the third persona camera if the client is NOT the owner of the player character
+        else if (!IsOwner) // Disable the third persona camera if the client is NOT the owner of the player character
         {
             tpCamera.enabled = false;
         }
+
+        if (!IsOwner)
+        {
+            tpCamera.gameObject.SetActive(false);
+        }
+
+        tpCamera.gameObject.SetActive(true);
     }
 
     public override void OnNetworkDespawn()
