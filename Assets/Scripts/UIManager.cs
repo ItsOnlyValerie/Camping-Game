@@ -1,12 +1,14 @@
+using TMPro;
 using UnityEngine;
+using Unity.Netcode;
 
-public class UIManager : MonoBehaviour
+public class UIManager : NetworkBehaviour
 {
-    // reference the playerController script
+    // Reference the playerController script
     public PlayerController playerController;
 
-    // reference the isAlive variable from the playerController
-    bool isAlive = PlayerController.isAlive;
+    // Reference the WoodMinigameHandler script
+    public WoodMinigameHandler woodMinigameHandler;
 
     // Reference the User Interface via the Inspector
     //[SerializeField] GameObject userInterface;
@@ -15,66 +17,51 @@ public class UIManager : MonoBehaviour
     [SerializeField] GameObject leaveSession;
     [SerializeField] GameObject sessionCode;
     [SerializeField] GameObject playerName;
+    [SerializeField] TextMeshProUGUI woodMinigameText;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
-        // if the user interface is not active on startup, enable it
-        //if (!userInterface.activeSelf) userInterface.SetActive(true);
-
-        // create references to the User Interface session buttons
-        //createSession = userInterface.transform.Find("Create Session");
-        //joinSession = userInterface.transform.Find("Quick Join Session");
-        //leaveSession = userInterface.transform.Find("Leave Session");
-        //sessionCode = userInterface.transform.Find("Show Session Code");
-
-        // disable the session code & leave session UI whilst not in a session - COME BACK TO THIS
-        //sessionCode.gameObject.SetActive(false);
-        //leaveSession.gameObject.SetActive(false);
-
-        // Set up the UI once on start (main menu)
-       // createSession.gameObject.SetActive(true);
-        //joinSession.gameObject.SetActive(true);
-        //leaveSession.gameObject.SetActive(false);
-        //sessionCode.gameObject.SetActive(false);
-        //playerName.gameObject.SetActive(true);
+        // Hide the wood minigame UI upon start
+        woodMinigameText.gameObject.SetActive(false);
     }
 
     // Update is called once per frame
     void Update()
     {
-        // If the player is in a session (networkSpawn), disable the create & join interface and enable the leave & code interface
-        /*if (isAlive)
+        //WoodMinigameUI();
+    }
+
+    // Function for the wood minigame's related UI
+    void WoodMinigameUI()
+    {
+        // If the player is inside the minigame's bounds
+        /*if (woodMinigameHandler.insideBounds)
         {
-            createSession.gameObject.SetActive(false);
-            joinSession.gameObject.SetActive(false);
-            sessionCode.gameObject.SetActive(true);
-            leaveSession.gameObject.SetActive(true);
+            woodMinigameText.gameObject.SetActive(true);
+            // If the total number of players inside of the minigame's bounds is (not) equal to the total number of players in the session, set the text accordingly
+            if (woodMinigameHandler.totalPlayers != GameManager.instance.playerCount)
+            {
+                woodMinigameText.text = "Waiting for other player(s)...";
+            }
+            else
+            {
+                woodMinigameText.text = "All players are ready! Press [KEY] to begin!";
+            }
         }
-        else if (!isAlive) // if the player is not in a session (networkDespawn), enable the create & join interface and disable the leave & code interface
+        else // Hide the wood minigame UI
         {
-            createSession.gameObject.SetActive(true);
-            joinSession.gameObject.SetActive(true);
-            sessionCode.gameObject.SetActive(false);
-            leaveSession.gameObject.SetActive(false);
+            woodMinigameText.gameObject.SetActive(false);
         }*/
     }
 
     public void SessionJoinUpdateUI() // Update the UI to show/hide certain elements when connected to a session
     {
-        //createSession.gameObject.SetActive(false);
-        //joinSession.gameObject.SetActive(false);
-        //sessionCode.gameObject.SetActive(true);
-        //leaveSession.gameObject.SetActive(true);
-        //playerName.gameObject.SetActive(false);
+
     }
 
     public void SessionLeaveUpdateUI() // Update the UI to show/hide certain elements when not connected to a session (main menu)
     {
-        //createSession.gameObject.SetActive(true);
-        //joinSession.gameObject.SetActive(true);
-        //sessionCode.gameObject.SetActive(false);
-        //leaveSession.gameObject.SetActive(false);
-        //playerName.gameObject.SetActive(true);
+
     }
 }

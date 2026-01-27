@@ -3,52 +3,103 @@ using Unity.Netcode;
 using NUnit.Framework;
 using System.Collections.Generic;
 using Unity.Services.Multiplayer;
+using UnityEngine.Rendering.Universal;
 
 public class WoodMinigameHandler : NetworkBehaviour
 {
-    public List<GameObject> woodSpawnList; // Create a list of type GameObject to store the spawn points in
-    [SerializeField] private GameObject woodPrefab; // Reference the prefab for the wood
-    int totalWood; // Counter for how much wood is currently spawned
+    // Boolean to communicate with the UI Manager as to whether or not a player is within the minigame's bounds
+    public bool insideBounds = false;
+
+    // Boolean to communicate with the GameManager as to whether or not the minigame has been started
+    public bool minigameStarted = false;
+
+    // Integer to count how many players are inside the boundaries
+    public int totalPlayers = 0;
+
+    // Set up a reference to the player controls
+    private PlayerControls playerControls;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
-        // Set totalWood to 0
-        totalWood = 0;
+        // Reference the player controls
+        playerControls = new PlayerControls();
+
+        // Assign a reference to self in the GameManager
+        GameManager.instance.woodMinigameHandler = this;
     }
 
     // Update is called once per frame
     void Update()
     {
-        if (IsServer) // Only the server should be handling this
+        // If all players are within the minigame boundaries, then minigame hasn't already been started, and a player hits the interact key, start the minigame
+        if (totalPlayers == GameManager.instance.playerCount && playerControls.Gameplay.Interact.IsPressed() && !minigameStarted)
         {
-
+            minigameStarted = true;
         }
-    }
 
-   public void woodSpawn()
-    {
-        Debug.Log("woodSpawn() was called. If the objects have not appeared, something didn't work!");
-        // For each spawn point, instantiate a collectable piece of wood
-        foreach (GameObject spawn in woodSpawnList)
+       /*if (minigameStarted)
         {
-            GameObject wood = Instantiate(woodPrefab, spawn.transform.position, spawn.transform.rotation);
-            wood.GetComponent<NetworkObject>().Spawn(true);
-        }
-        
+            foreach (GameObject wood in GameManager.instance.woodList)
+            {
+
+            }
+        }*/
     }
 
-    public void woodJoining()
+    // On enable, enable the player controls
+    private void OnEnable()
     {
-        Debug.Log("woodJoining() was called.");
-
-
+        playerControls.Enable();
     }
 
-    public void woodFail()
+    // On disable, disable the player controls
+    private void OnDisable()
     {
-        Debug.Log("woodFail() was called.");
+        playerControls.Disable();
+    }
 
+    // When a player enters the minigame boundaries, do the following
+    private void OnTriggerEnter(Collider other)
+    {
+        // Only the server should be handling this
+        if (!IsServer) return;
 
+        // If the object that's entered the trigger is not a player, return
+        if (!other.CompareTag("Player")) return;
+
+        // Debug log to see if player detection works correctly
+        Debug.Log("Player has entered the minigame boundaries!");
+
+        // Update the player count
+        totalPlayers += 1;
+
+        // Debug log to see if totalPlayers is being updated correctly
+        Debug.Log($"totalPlayers = {totalPlayers}");
+
+        // Set insideBounds to true so the UI Manager knows to display the related text
+        insideBounds = true;
+    }
+
+    // When a player exits the minigame boundaries, do the following
+    private void OnTriggerExit(Collider other)
+    {
+        // Only the server should be handling this
+        if (!IsServer) return;
+
+        // If the object that's exited the trigger is not a player, return
+        if (!other.CompareTag("Player")) return;
+
+        // Debug log to see if player detection works correctly
+        Debug.Log("Player has exited the minigame boundaries!");
+
+        // Update the player count
+        totalPlayers -= 1;
+
+        // Debug log to see if totalPlayers is being updated correctly
+        Debug.Log($"totalPlayers = {totalPlayers}");
+
+        // Set insideBounds to false to hide the related text
+        insideBounds = false;
     }
 }

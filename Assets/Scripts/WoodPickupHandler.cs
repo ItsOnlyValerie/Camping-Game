@@ -28,19 +28,19 @@ public class WoodPickupHandler : NetworkBehaviour
         // Float the wood up & down
         float newY = originalPos.y + Mathf.Sin(Time.time * floatSpeed) * floatHeight / 2;
         transform.position = new Vector3(originalPos.x, newY, originalPos.z);
-        
+
     }
 
     private void OnTriggerEnter(Collider other) // If a player enters the wood's Box Collider, destroy it and update the player's score for this minigame - FULL FUNCTIONALITY TO BE ADDED
     {
         if (!IsServer) return; // Only the server should be handling this - not the client
 
-        //if (other.TryGetComponent<PlayerController>(out var player)) // Try to find the PlayerController component on the target object and output it to a new variable called "player". If it exists, it's a player; execute the functionality
-        //{
-        //    NetworkObject.Despawn(); // Despawn the object for everyone on the network
-        //    spawnTimer -= Time.deltaTime; // Count down the timer
-        //    if (spawnTimer <= 0) NetworkObject.Spawn(); // Respawn the object for everyone on the network
-        //    spawnTimer = 10.0f; // Reset the timer
-        //}
+        if (other.CompareTag("Player")) // If the other object is a player, allow interaction
+        {
+            NetworkObject.Despawn(); // Despawn the object for everyone on the network
+            //spawnTimer -= Time.deltaTime; // Count down the timer
+            //if (spawnTimer <= 0) NetworkObject.Spawn(); // Respawn the object for everyone on the network
+            //spawnTimer = 10.0f; // Reset the timer
+        }
     }
 }

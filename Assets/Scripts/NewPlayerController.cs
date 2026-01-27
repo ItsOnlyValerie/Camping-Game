@@ -139,6 +139,7 @@ public class NewPlayerController : NetworkBehaviour
 
     public override void OnNetworkSpawn()
     {
+        // Get the third person camera component
         tpCamera = GetComponentInChildren<CinemachineCamera>();
 
         // If the client is the owner of the player character and the third person camera exists, disable the main camera and enable the third person camera
@@ -159,6 +160,9 @@ public class NewPlayerController : NetworkBehaviour
         }
 
         tpCamera.gameObject.SetActive(true);
+
+        // Increment the GameManager's player counter
+        GameManager.instance.IncrementPlayerCount();
     }
 
     public override void OnNetworkDespawn()
@@ -169,5 +173,8 @@ public class NewPlayerController : NetworkBehaviour
             tpCamera.enabled = false;
             mainCamera.enabled = true;
         }
+
+        // Decrement the GameManager's player counter
+        GameManager.instance.DecrementPlayerCount();
     }
 }
