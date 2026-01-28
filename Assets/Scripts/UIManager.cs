@@ -18,27 +18,31 @@ public class UIManager : NetworkBehaviour
     [SerializeField] GameObject sessionCode;
     [SerializeField] GameObject playerName;
     [SerializeField] TextMeshProUGUI woodMinigameText;
+    [SerializeField] TextMeshProUGUI playerWoodScore;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
         // Hide the wood minigame UI upon start
         woodMinigameText.gameObject.SetActive(false);
+        playerWoodScore.gameObject.SetActive(false);
     }
 
     // Update is called once per frame
     void Update()
     {
-        //WoodMinigameUI();
+        WoodMinigameUI();
     }
 
     // Function for the wood minigame's related UI
     void WoodMinigameUI()
     {
         // If the player is inside the minigame's bounds
-        /*if (woodMinigameHandler.insideBounds)
+        if (woodMinigameHandler.insideBounds)
         {
+            // Show the text
             woodMinigameText.gameObject.SetActive(true);
+
             // If the total number of players inside of the minigame's bounds is (not) equal to the total number of players in the session, set the text accordingly
             if (woodMinigameHandler.totalPlayers != GameManager.instance.playerCount)
             {
@@ -46,13 +50,20 @@ public class UIManager : NetworkBehaviour
             }
             else
             {
-                woodMinigameText.text = "All players are ready! Press [KEY] to begin!";
+                woodMinigameText.text = $"All players are ready! Press F to begin!";
             }
         }
-        else // Hide the wood minigame UI
+        // Otherwise, if the minigame has started or the player is not within the minigame's bounds, hide the text
+        else if (woodMinigameHandler.minigameStarted || !woodMinigameHandler.insideBounds)
         {
             woodMinigameText.gameObject.SetActive(false);
-        }*/
+        }
+
+        // If the minigame has been started, show the player's score UI
+        if (woodMinigameHandler.minigameStarted)
+        {
+            playerWoodScore.gameObject.SetActive(true);
+        }
     }
 
     public void SessionJoinUpdateUI() // Update the UI to show/hide certain elements when connected to a session

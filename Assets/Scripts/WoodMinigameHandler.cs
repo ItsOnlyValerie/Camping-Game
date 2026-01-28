@@ -7,24 +7,31 @@ using UnityEngine.Rendering.Universal;
 
 public class WoodMinigameHandler : NetworkBehaviour
 {
+    // Setup for the wood collection minigame
+    [Header("Wood Minigame")]
+    [SerializeField] GameObject woodPrefab;
+    [SerializeField] GameObject WoodMinigameObject;
+    public GameObject[] woodSpawnPoints;
+    public List<GameObject> woodList = new List<GameObject>();
+
     // Boolean to communicate with the UI Manager as to whether or not a player is within the minigame's bounds
     public bool insideBounds = false;
 
     // Boolean to communicate with the GameManager as to whether or not the minigame has been started
     public bool minigameStarted = false;
 
+    // Boolean to communicate with the NewPlayerController to allow input to start the minigame
+    public bool playerStartInput = false;
+
+    // Boolean to stop wood from being spawned once it has been spawned once already
+    private bool woodSpawned = false;
+
     // Integer to count how many players are inside the boundaries
     public int totalPlayers = 0;
-
-    // Set up a reference to the player controls
-    private PlayerControls playerControls;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
-        // Reference the player controls
-        playerControls = new PlayerControls();
-
         // Assign a reference to self in the GameManager
         GameManager.instance.woodMinigameHandler = this;
     }
@@ -32,38 +39,35 @@ public class WoodMinigameHandler : NetworkBehaviour
     // Update is called once per frame
     void Update()
     {
-        // If all players are within the minigame boundaries, then minigame hasn't already been started, and a player hits the interact key, start the minigame
-        if (totalPlayers == GameManager.instance.playerCount && playerControls.Gameplay.Interact.IsPressed() && !minigameStarted)
+        // Only the server should be handling this
+        if (!IsServer) return;
+
+        // If all players are within the minigame boundaries and the minigame hasn't already been started, set playerStartInput to true to allow the player to start the minigame
+        if (totalPlayers == GameManager.instance.playerCount && !minigameStarted && playerStartInput == false)
         {
-            minigameStarted = true;
+            playerStartInput = true;
         }
 
-       /*if (minigameStarted)
+        // If the minigame has been started and the wood has not been spawned yet, instantiate the wood at each spawn point
+        if (minigameStarted && !woodSpawned)
         {
-            foreach (GameObject wood in GameManager.instance.woodList)
+            // For each spawn point, instantiate a collectable wood
+            foreach (GameObject spawn in woodSpawnPoints)
             {
-
+                GameObject wood = Instantiate(woodPrefab, spawn.transform.position, spawn.transform.rotation);
+                wood.GetComponent<NetworkObject>().Spawn(true);
+                woodList.Add(wood);
             }
-        }*/
-    }
 
-    // On enable, enable the player controls
-    private void OnEnable()
-    {
-        playerControls.Enable();
-    }
-
-    // On disable, disable the player controls
-    private void OnDisable()
-    {
-        playerControls.Disable();
+            woodSpawned = true;
+        }
     }
 
     // When a player enters the minigame boundaries, do the following
     private void OnTriggerEnter(Collider other)
     {
         // Only the server should be handling this
-        if (!IsServer) return;
+       // if (!IsServer) return;
 
         // If the object that's entered the trigger is not a player, return
         if (!other.CompareTag("Player")) return;
@@ -85,7 +89,7 @@ public class WoodMinigameHandler : NetworkBehaviour
     private void OnTriggerExit(Collider other)
     {
         // Only the server should be handling this
-        if (!IsServer) return;
+        //if (!IsServer) return;
 
         // If the object that's exited the trigger is not a player, return
         if (!other.CompareTag("Player")) return;

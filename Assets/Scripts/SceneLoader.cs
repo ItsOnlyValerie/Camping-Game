@@ -16,9 +16,9 @@ public class SceneLoader : MonoBehaviour
 
     }
 
+    // Function to swap to the game world scene
     public void openGameScene()
     {
-        //SceneManager.LoadScene("GameScene");
-        NetworkManager.Singleton.SceneManager.LoadScene("GameScene", UnityEngine.SceneManagement.LoadSceneMode.Single);
+        NetworkManager.Singleton.SceneManager.LoadScene("Game World", UnityEngine.SceneManagement.LoadSceneMode.Single);
     }
 }

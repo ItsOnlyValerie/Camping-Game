@@ -5,13 +5,6 @@ using System.Collections.Generic;
 
 public class GameManager : NetworkBehaviour
 {
-    // Setup for the wood collection minigame
-    [Header("Wood Minigame")]
-    [SerializeField] GameObject woodPrefab;
-    [SerializeField] GameObject WoodMinigameObject;
-    public GameObject[] woodSpawnPoints;
-    public List<GameObject> woodList = new List<GameObject>();
-
     // Setup the instance of the GameManager
     public static GameManager instance;
 
@@ -47,10 +40,10 @@ public class GameManager : NetworkBehaviour
     void Update()
     {
         // If the wood minigame has been started, spawn the wood once
-        if (woodMinigameHandler.minigameStarted)
+        /*if (woodMinigameHandler.minigameStarted)
         {
             WoodMinigameInit();
-        }
+        }*/
     }
 
     // Function for incrementing the player count if a player joins
@@ -67,17 +60,5 @@ public class GameManager : NetworkBehaviour
         playerCount--;
 
         Debug.Log($"Player left! Player count is now {playerCount}");
-    }
-
-    // Function for the wood minigame's initial setup
-    void WoodMinigameInit()
-    {
-        // For each spawn point, instantiate a collectable wood
-        foreach (GameObject spawn in woodSpawnPoints)
-        {
-            GameObject wood = Instantiate(woodPrefab, spawn.transform.position, spawn.transform.rotation);
-            wood.GetComponent<NetworkObject>().Spawn(true);
-            woodList.Add(wood);
-        }
     }
 }

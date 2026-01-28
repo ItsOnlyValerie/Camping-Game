@@ -11,7 +11,6 @@ GameObject:
   - component: {fileID: 8442191731422379862}
   - component: {fileID: 6229915201187507861}
   - component: {fileID: 219345706168261625}
-  - component: {fileID: 970469269015226709}
   m_Layer: 0
   m_Name: FrontIndicator
   m_TagString: Untagged
@@ -87,27 +86,6 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!65 &970469269015226709
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2093282364607500413}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 0
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Size: {x: 1, y: 1, z: 1}
-  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &6082551631629200476
 GameObject:
   m_ObjectHideFlags: 0
@@ -368,6 +346,7 @@ GameObject:
   - component: {fileID: 8644163313737254657}
   - component: {fileID: 4737549961525614571}
   - component: {fileID: 2608574602192855695}
+  - component: {fileID: -8911432168621947189}
   m_Layer: 0
   m_Name: NewPlayer
   m_TagString: Player
@@ -508,6 +487,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ShowTopMostFoldoutHeaderGroup: 1
+  woodMinigameHandler: {fileID: 0}
   moveSpeed: 10
   gravity: -9.18
   mainCamera: {fileID: 0}
@@ -559,3 +539,18 @@ MonoBehaviour:
   SwitchTransformSpaceWhenParented: 0
   Interpolate: 1
   SlerpPosition: 0
+--- !u!114 &-8911432168621947189
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7994499645766600220}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 028efa4b54d6df24e9ccd5480d683b6c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ShowTopMostFoldoutHeaderGroup: 1
+  score:
+    m_InternalValue: 0

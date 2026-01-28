@@ -10,6 +10,9 @@ public class NewPlayerController : NetworkBehaviour
     // Setup a reference to the input system
     private PlayerControls playerControls;
 
+    // Setup a reference to the WoodMinigameHandler
+    public WoodMinigameHandler woodMinigameHandler;
+
     // Rotation variable on the Y-axis
     float rotationY;
 
@@ -67,10 +70,17 @@ public class NewPlayerController : NetworkBehaviour
         // If the player is NOT grounded, apply gravity instead
         if (!isGrounded) verticalVelocity.y = gravity * Time.deltaTime;
 
+        // If the reference to the WoodMinigameHandler component is null, find it
+        if (woodMinigameHandler == null)
+        {
+            woodMinigameHandler = GameObject.Find("Minigames").GetComponentInChildren<WoodMinigameHandler>();
+        }
+
         // Player functions
         GatherInput();
         CalculateSpeed();
         Movement();
+        WoodMinigameInput();
     }
 
     // Function to obtain the player's input
@@ -134,6 +144,16 @@ public class NewPlayerController : NetworkBehaviour
         else
         {
             currentSpeed = moveSpeed;
+        }
+    }
+
+    // Function to handle the player input starting the wood collection minigame
+   private void WoodMinigameInput()
+    {
+        // If playerStartInput is true and the player presses the interact key, set the minigameStarted boolean to true
+        if (woodMinigameHandler.playerStartInput && playerControls.Gameplay.Interact.IsPressed())
+        {
+            woodMinigameHandler.minigameStarted = true;
         }
     }
 
