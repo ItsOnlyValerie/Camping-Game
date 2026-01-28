@@ -64,6 +64,9 @@ public class PlayerController : NetworkBehaviour
         // Get the player animator
         animator = GetComponent<Animator>();
 
+        // Get the player controller
+        controller = GetComponent<CharacterController>();
+
         // Get the rigidbody
         rigidBody = GetComponent<Rigidbody>();
 
