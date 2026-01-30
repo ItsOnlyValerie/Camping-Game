@@ -19,11 +19,27 @@ public class PlayerScoreManager : NetworkBehaviour
     }
 
     // Function to update the player's score upon collecting a piece of wood in the wood minigame
-    public void AddScore(int amount)
+    /*(public void AddScore(int amount)
     {
-        // Only the server should be handling this
-        if (!IsServer) return;
+        if (IsServer)
+        {
+            // Host can apply this immediately
+            score.Value += amount;
+        }
+        else
+        {
+            AddScoreServerRpc(amount);
+        }
+    }*/
 
+    [Rpc(SendTo.Server, InvokePermission = RpcInvokePermission.Everyone)]
+    public void AddScoreServerRpc(int amount)
+    {
         score.Value += amount;
     }
+
+    public override void OnNetworkSpawn()
+    {
+        if (IsServer) Debug.Log($"Score write permission = {score.WritePerm}");
+    }    
 }

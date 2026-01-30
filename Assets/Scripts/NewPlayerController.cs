@@ -150,10 +150,13 @@ public class NewPlayerController : NetworkBehaviour
     // Function to handle the player input starting the wood collection minigame
    private void WoodMinigameInput()
     {
-        // If playerStartInput is true and the player presses the interact key, set the minigameStarted boolean to true
-        if (woodMinigameHandler.playerStartInput && playerControls.Gameplay.Interact.IsPressed())
+        // If the player is not the owner of the character, return
+        if (!IsOwner) return;
+
+        // If playerStartInput is true and the player presses the interact key, call the StartMinigame server Rpc to set the minigameStarted boolean to true
+        if (woodMinigameHandler.playerStartInput.Value && playerControls.Gameplay.Interact.IsPressed())
         {
-            woodMinigameHandler.minigameStarted = true;
+            woodMinigameHandler.StartMinigameServerRpc(NetworkManager.Singleton.LocalClientId);
         }
     }
 

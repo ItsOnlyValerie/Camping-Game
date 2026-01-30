@@ -346,7 +346,7 @@ GameObject:
   - component: {fileID: 8644163313737254657}
   - component: {fileID: 4737549961525614571}
   - component: {fileID: 2608574602192855695}
-  - component: {fileID: -8911432168621947189}
+  - component: {fileID: 5667320314919898624}
   m_Layer: 0
   m_Name: NewPlayer
   m_TagString: Player
@@ -539,7 +539,7 @@ MonoBehaviour:
   SwitchTransformSpaceWhenParented: 0
   Interpolate: 1
   SlerpPosition: 0
---- !u!114 &-8911432168621947189
+--- !u!114 &5667320314919898624
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}

@@ -12,11 +12,16 @@ public class WoodPickupHandler : NetworkBehaviour
 
     Vector3 originalPos; // Original position of the wood
 
+    private WoodMinigameHandler woodMinigameHandler; // Reference the WoodMinigameHandler
+
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
         // Store the object's original position
         originalPos = new Vector3(transform.position.x, transform.position.y, transform.position.z);
+
+        // Initialise the WoodMinigameHandler reference
+        woodMinigameHandler = FindFirstObjectByType<WoodMinigameHandler>();
     }
 
     // Update is called once per frame
@@ -47,18 +52,44 @@ public class WoodPickupHandler : NetworkBehaviour
         // Debug log to test if the client ID is being obtained
         Debug.Log($"Wood has been touched by client {playerId}");
 
-        // Get the PlayerScoreManager component and call the AddScore() function in order to update the player's score
-        var playerScore = playerNetObj.GetComponent<PlayerScoreManager>();
-        playerScore.AddScore(1);
+        // Get the ScoreManager
+        ScoreManager scoreManager = FindFirstObjectByType<ScoreManager>();
 
-        // Debug log to see if the player's score is being updated successfully
-        Debug.Log($"Client {playerId}'s score is now {playerScore.score.Value}");
+        // Debug log to check if ScoreManager exists
+        if (scoreManager == null)
+        {
+            Debug.LogError("ScoreManager not found!");
+            return;
+        }
+
+        // Update the player's score using their Id as a reference to their entry in the NetworkList
+        scoreManager.AddScore(playerId, 1);
+
+        // Debugging to see if the player's score is being updated successfully
+        int playerScore = 0;
+        foreach (var entry in scoreManager.scores)
+        {
+            if (entry.clientId == playerId)
+            {
+                playerScore = entry.score;
+                break;
+            }
+        }
+
+        Debug.Log($"Client {playerId}'s score is now {playerScore}");
+
+        // Remove the object from the woodList in WoodMinigameHandler
+        woodMinigameHandler.RemoveFromWoodList(this.gameObject);
 
         // Despawn the object for everyone on the network
-        NetworkObject.Despawn(true);
-
-        // Despawn the wood for everyone
-        NetworkObject.Despawn(true);
+        if (NetworkObject != null)
+        {
+            NetworkObject.Despawn(true);
+        }
+        else // Fallback in case it is not networked
+        {
+            Destroy(gameObject);
+        }
 
         // Count down the timer
         //spawnTimer -= Time.deltaTime;
