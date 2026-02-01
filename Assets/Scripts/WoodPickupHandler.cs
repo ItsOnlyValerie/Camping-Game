@@ -4,15 +4,29 @@ using System.Threading;
 
 public class WoodPickupHandler : NetworkBehaviour
 {
-    float rotationSpeed = 80.0f; // Rotation speed of the wood
-    float floatSpeed = 1.5f; // Floating speed of the wood
-    float floatHeight = 0.5f; // Maximum height the wood should float above its original position
-    float spawnTimer = 10.0f; // Timer for cooldown on wood respawning
-    public bool woodCollected = false; // Boolean to detect when a piece of wood has been collected
+    // Rotation speed of the wood
+    float rotationSpeed = 80.0f;
 
-    Vector3 originalPos; // Original position of the wood
+    // Floating speed of the wood
+    float floatSpeed = 1.5f;
 
-    private WoodMinigameHandler woodMinigameHandler; // Reference the WoodMinigameHandler
+    // Maximum height the wood should float above its original position
+    float floatHeight = 0.5f;
+
+    // Timer for cooldown on wood respawning
+    float spawnTimer = 10.0f;
+
+    // Boolean to detect when a piece of wood has been collected
+    public bool woodCollected = false;
+
+    // Original position of the wood
+    Vector3 originalPos;
+
+    // Reference the WoodMinigameHandler
+    private WoodMinigameHandler woodMinigameHandler;
+
+    // Reference the wood's audio source
+    public AudioSource audioSource;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
@@ -22,6 +36,9 @@ public class WoodPickupHandler : NetworkBehaviour
 
         // Initialise the WoodMinigameHandler reference
         woodMinigameHandler = FindFirstObjectByType<WoodMinigameHandler>();
+
+        // Initialise the audio source
+        audioSource = GetComponent<AudioSource>();
     }
 
     // Update is called once per frame
@@ -36,9 +53,11 @@ public class WoodPickupHandler : NetworkBehaviour
 
     }
 
-    private void OnTriggerEnter(Collider other) // If a player enters the wood's Box Collider, destroy it and update the player's score for this minigame - FULL FUNCTIONALITY TO BE ADDED
+    // If a player enters the wood's Box Collider, destroy it and update the player's score for this minigame
+    private void OnTriggerEnter(Collider other)
     {
-        if (!IsServer) return; // Only the server should be handling this - not the client
+        // Only the server should be handling this
+        if (!IsServer) return;
 
         // Get the player NetworkObject
         if (!other.TryGetComponent(out NetworkObject playerNetObj)) return;
@@ -78,6 +97,9 @@ public class WoodPickupHandler : NetworkBehaviour
 
         Debug.Log($"Client {playerId}'s score is now {playerScore}");
 
+        // Play the pickup SFX from the audio source
+        audioSource.Play();
+
         // Remove the object from the woodList in WoodMinigameHandler
         woodMinigameHandler.RemoveFromWoodList(this.gameObject);
 
@@ -90,14 +112,5 @@ public class WoodPickupHandler : NetworkBehaviour
         {
             Destroy(gameObject);
         }
-
-        // Count down the timer
-        //spawnTimer -= Time.deltaTime;
-
-        // Respawn the object for everyone on the network
-        //if (spawnTimer <= 0) NetworkObject.Spawn();
-
-        // Reset the timer
-        //spawnTimer = 10.0f;
     }
 }

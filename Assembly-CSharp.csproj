@@ -70,12 +70,18 @@
     <Compile Include="Assets\Scripts\MainMenu.cs" />
     <Compile Include="Assets\Scripts\NewPlayerController.cs" />
     <Compile Include="Assets\Scripts\GameManager.cs" />
+    <Compile Include="Assets\Scripts\PlayerSkinSelection.cs" />
     <Compile Include="Assets\My Robot Kyle\KylePlayerManager.cs" />
+    <Compile Include="Assets\Scripts\PlayerNameBillboard.cs" />
     <Compile Include="Assets\Scripts\PlayerController.cs" />
     <Compile Include="Assets\Scripts\PlayerControls.cs" />
+    <Compile Include="Assets\Scripts\PlayerNameUI.cs" />
     <Compile Include="Assets\Scripts\WoodMinigameHandler.cs" />
+    <Compile Include="Assets\Scripts\PlayerAppearanceHandler.cs" />
     <Compile Include="Assets\Scripts\NetworkManagerPersist.cs" />
+    <Compile Include="Assets\Scripts\PlayerSkin.cs" />
     <Compile Include="Assets\Scripts\WoodPickupHandler.cs" />
+    <Compile Include="Assets\Scripts\PlayerName.cs" />
     <Compile Include="Assets\Scripts\SessionManager.cs" />
     <Compile Include="Assets\Scripts\SceneLoader.cs" />
   </ItemGroup>
