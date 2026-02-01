@@ -16,8 +16,10 @@ Enjoy a cute and cozy multiplayer game where you hangout with your friends.
 </p>
 
 # Features
-Character customization.
+Character customization!
 
-Mini-games.
+Achievements!
 
-Quality time spent with friends.
+Mini-games!
+
+Easter eggs...?
