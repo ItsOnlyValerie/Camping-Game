@@ -44,6 +44,10 @@ public class NewPlayerController : NetworkBehaviour
     {
         // Reference the character controller
         characterController = GetComponent<CharacterController>();
+
+        // Set the cursor visibility & confinement (set to confined to allow easy access to buttons in windowed mode)
+        Cursor.visible = false;
+        Cursor.lockState = CursorLockMode.Confined;
     }
 
     // On enable, enable the player controls

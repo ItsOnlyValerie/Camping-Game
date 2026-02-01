@@ -13,9 +13,6 @@ public class WoodPickupHandler : NetworkBehaviour
     // Maximum height the wood should float above its original position
     float floatHeight = 0.5f;
 
-    // Timer for cooldown on wood respawning
-    float spawnTimer = 10.0f;
-
     // Boolean to detect when a piece of wood has been collected
     public bool woodCollected = false;
 
