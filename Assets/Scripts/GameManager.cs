@@ -30,22 +30,6 @@ public class GameManager : NetworkBehaviour
         DontDestroyOnLoad(gameObject);
     }
 
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
-    void Start()
-    {
-
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        // If the wood minigame has been started, spawn the wood once
-        /*if (woodMinigameHandler.minigameStarted)
-        {
-            WoodMinigameInit();
-        }*/
-    }
-
     // Function for incrementing the player count if a player joins
     public void IncrementPlayerCount()
     {
